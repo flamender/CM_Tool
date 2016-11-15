@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModuleServerAccessInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Connections>
+    <Connection Active="true">
+      <ServerInfo IP_or_DNSName="test-db.rigilog.com" InstanceName="" Port="1435" DatabaseName="MIB" UserName="dbo_MIB" Password="HBISJOIHBFIEUFGB(/$§G" UseSSPI="false" />
+      <UsedProvider>SQLOLEDB</UsedProvider>
+    </Connection>
+  </Connections>
+  <AuthenticationServerEnvironment>
+    <Use_StandardAuthentification>true</Use_StandardAuthentification>
+    <Use_RadiusAuthentification>false</Use_RadiusAuthentification>
+    <Radius_Server>
+    </Radius_Server>
+    <Radius_SharedSecret>
+    </Radius_SharedSecret>
+    <Radius_Port>0</Radius_Port>
+    <Use_ActiveDirectoryAuthentification>false</Use_ActiveDirectoryAuthentification>
+    <ActiveDirectory_Domain>
+    </ActiveDirectory_Domain>
+    <Radius_SpecialCustomerRule>
+    </Radius_SpecialCustomerRule>
+    <SSOTokenTimeoutInMinutes>5</SSOTokenTimeoutInMinutes>
+  </AuthenticationServerEnvironment>
+</ModuleServerAccessInfo>

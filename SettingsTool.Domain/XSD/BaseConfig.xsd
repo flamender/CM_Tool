@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2017 (x64) (http://www.altova.com) by Martin Lang (Rigilog Ag) -->
+<xs:schema xmlns:ns1="http://www.rigilog.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="NewDataSet">
+	<xs:element name="BaseConfiguration">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Page" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="Title" type="xs:string"/>
+						<xs:attribute name="BackgroundColor" type="xs:string"/>
+						<xs:attribute name="DebugMode" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Paths" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="ApplicationRoot_Physical" type="xs:string"/>
+						<xs:attribute name="Applicationroot_AppServerSelfReference" type="xs:string"/>
+						<xs:attribute name="WebServicesFolder_RelativeToApplicationRoot" type="xs:string"/>
+						<xs:attribute name="RessourcesFolder_RelativeToApplicationRoot" type="xs:string"/>
+						<xs:attribute name="RessourcesFolder_UseWebAccess" type="xs:string"/>
+						<xs:attribute name="ModuleInfoFolder_RelativeToApplicationRoot" type="xs:string"/>
+						<xs:attribute name="ModuleInfoFolder_UseWebAccess" type="xs:string"/>
+						<xs:attribute name="CachingFolder_RelativeToApplicationRoot" type="xs:string"/>
+						<xs:attribute name="EnableCaching" type="xs:string"/>
+						<xs:attribute name="CacheRenewalIntervall_in_Minutes" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ApplicationContainer" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="FlashRecognition_MinimumVersion_Major" type="xs:string"/>
+						<xs:attribute name="FlashRecognition_MinimumVersion_Minor" type="xs:string"/>
+						<xs:attribute name="FlashRecognition_MinimumVersion_Revision" type="xs:string"/>
+						<xs:attribute name="Preloader_Path" type="xs:string"/>
+						<xs:attribute name="Preloader_Exe" type="xs:string"/>
+						<xs:attribute name="Preloader_ShowZugSeilLogo" type="xs:string"/>
+						<xs:attribute name="Preloader_BackgroundColor" type="xs:string"/>
+						<xs:attribute name="MainApp_Path" type="xs:string"/>
+						<xs:attribute name="MainApp_AppExe" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DBConnSource" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="UseWebAccess" type="xs:string"/>
+						<xs:attribute name="NonStdWebLocation" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ModuleTemplate" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="UseTemplate" type="xs:string"/>
+						<xs:attribute name="CheckIntegrity" type="xs:string"/>
+						<xs:attribute name="SendMail" type="xs:string"/>
+						<xs:attribute name="WriteFile" type="xs:string"/>
+						<xs:attribute name="UpdateModuleSettings" type="xs:string"/>
+						<xs:attribute name="IntegrityMailRecipient" type="xs:string"/>
+						<xs:attribute name="SystemMarker" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MiniModuleServers" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MMServer" minOccurs="0">
+								<xs:complexType>
+									<xs:attribute name="IsActive" type="xs:string"/>
+									<xs:attribute name="Publiclyreachable_ServerRoot" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RequiredMiniModules" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MiniModule" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Instances" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Instance" minOccurs="0">
+														<xs:complexType>
+															<xs:attribute name="Instance_Alias" type="xs:string"/>
+															<xs:attribute name="Instance_Version" type="xs:string"/>
+															<xs:attribute name="DirectLink_Path" type="xs:string"/>
+															<xs:attribute name="DirectLink_FileName" type="xs:string"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Name" type="xs:string"/>
+									<xs:attribute name="Comment" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="GIS" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="DocumentRoot" type="xs:string"/>
+						<xs:attribute name="DocumentRoot_RelativeToApplicationRoot" type="xs:string"/>
+						<xs:attribute name="UploadScript_RelativeToApplicationRoot" type="xs:string"/>
+						<xs:attribute name="DownloadScript_RelativeToApplicationRoot" type="xs:string"/>
+						<xs:attribute name="MaxGISItemsPerFolder" type="xs:string"/>
+						<xs:attribute name="UserImpersonation" type="xs:string"/>
+						<xs:attribute name="Impersonate_UserName" type="xs:string"/>
+						<xs:attribute name="Impersonate_Password" type="xs:string"/>
+						<xs:attribute name="Impersonate_Domain" type="xs:string"/>
+						<xs:attribute name="RelayMode" type="xs:string"/>
+						<xs:attribute name="Relay_MasterGISServer_DocumentRoot" type="xs:string"/>
+						<xs:attribute name="Relay_MasterGISServer_UploadScript" type="xs:string"/>
+						<xs:attribute name="Relay_MasterGISServer_DownloadScript" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MailServerSettings" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="IP" type="xs:string"/>
+						<xs:attribute name="Port" type="xs:string"/>
+						<xs:attribute name="UseSMTPAuth" type="xs:string"/>
+						<xs:attribute name="SMTP_Username" type="xs:string"/>
+						<xs:attribute name="SMTP_Password" type="xs:string"/>
+						<xs:attribute name="DefaultSender" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Initital_Settings" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="value"/>
+									<xs:attribute name="IsActive"/>
+									<xs:attribute name="Type"/>
+									<xs:attribute name="VarName" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="FileFormat_ReleaseDate" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

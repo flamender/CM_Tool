@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2017 (x64) (http://www.altova.com) by Martin Lang (Rigilog Ag) -->
+<xs:schema xmlns:ns1="Http://www.rigilog.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="ModuleServerAccessInfo">
+	<xs:element name="ModuleServerAccessInfo" msdata:IsDataSet="true" msdata:Locale="en-US">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Connections">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Connection" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="UsedProvider" type="xs:string" msdata:Ordinal="1"/>
+										<xs:element name="ServerInfo" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="IP_or_DNSName" type="xs:string"/>
+												<xs:attribute name="InstanceName" type="xs:string"/>
+												<xs:attribute name="Port" type="xs:string"/>
+												<xs:attribute name="DatabaseName" type="xs:string"/>
+												<xs:attribute name="UserName" type="xs:string"/>
+												<xs:attribute name="Password" type="xs:string"/>
+												<xs:attribute name="UseSSPI" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="Active" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AuthenticationServerEnvironment">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Use_StandardAuthentification" type="xs:string" minOccurs="0"/>
+							<xs:element name="Use_RadiusAuthentification" type="xs:string" minOccurs="0"/>
+							<xs:element name="Radius_Server" type="xs:string" minOccurs="0"/>
+							<xs:element name="Radius_SharedSecret" type="xs:string" minOccurs="0"/>
+							<xs:element name="Radius_Port" type="xs:string" minOccurs="0"/>
+							<xs:element name="Use_ActiveDirectoryAuthentification" type="xs:string" minOccurs="0"/>
+							<xs:element name="ActiveDirectory_Domain" type="xs:string" minOccurs="0"/>
+							<xs:element name="Radius_SpecialCustomerRule" type="xs:string" minOccurs="0"/>
+							<xs:element name="SSOTokenTimeoutInMinutes" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

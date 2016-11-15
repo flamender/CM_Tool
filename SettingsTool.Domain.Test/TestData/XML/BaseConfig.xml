@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BaseConfiguration FileFormat_ReleaseDate="24.01.2011">
+  <!-- Documentation for how to use the settings of this file can be found in the wiki-article -->
+  <!-- "MF4 - BaseConfig.xml" - http://wiki.rigilog.com/index.php/MF4_-_BaseConfig.xml -->
+  <Page Title="DEZAInt: Admin-Modul" BackgroundColor="#FFFFFF" DebugMode="false" />
+  <Paths ApplicationRoot_Physical="C:\inetpub\wwwroot\admin\"
+		 Applicationroot_AppServerSelfReference="http://10.160.112.22/admin/"
+		 WebServicesFolder_RelativeToApplicationRoot="Webservices"
+		 RessourcesFolder_RelativeToApplicationRoot="Ressources"
+		 RessourcesFolder_UseWebAccess="false"
+		 ModuleInfoFolder_RelativeToApplicationRoot="ModuleInfo"
+		 ModuleInfoFolder_UseWebAccess="false"
+		 CachingFolder_RelativeToApplicationRoot="_Cache"
+		 EnableCaching="true"
+		 CacheRenewalIntervall_in_Minutes="480"
+  />
+  <ApplicationContainer FlashRecognition_MinimumVersion_Major="9"
+						FlashRecognition_MinimumVersion_Minor="0"
+						FlashRecognition_MinimumVersion_Revision="45"
+						Preloader_Path="ModuleInfo/StandardClips"
+						Preloader_Exe="preloader4.swf"
+						Preloader_ShowZugSeilLogo="true"
+						Preloader_BackgroundColor="#FFFFFF"
+						MainApp_Path=""
+						MainApp_AppExe="flash.swf"
+  />
+  <DBConnSource UseWebAccess="false" NonStdWebLocation="" />
+  <ModuleTemplate UseTemplate="true"
+				  CheckIntegrity="true"
+				  SendMail="false"
+				  WriteFile="true"
+				  UpdateModuleSettings="true"
+				  IntegrityMailRecipient="system@rigilog.com"
+				  SystemMarker="Dispo-Test-Environment"
+  />
+  <MiniModuleServers>
+    <MMServer IsActive="false" Publiclyreachable_ServerRoot="https://saas-erp.rigilog.com/MMServer" />
+  </MiniModuleServers>
+  <RequiredMiniModules>
+    <MiniModule Name="std_ArticleClassSearch_PopUp" Comment="Mini-Module for article class selection popup">
+      <Instances>
+		<Instance Instance_Alias="ArtAdmACS01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/articleclasssearchpopup"
+				  DirectLink_FileName="std_ArticleClassSearch_PopUp.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_ArticleSearch_PopUp" Comment="Mini-Module for article selection">
+      <Instances>
+		<Instance Instance_Alias="ArtAdmAS01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/articlesearchpopup"
+				  DirectLink_FileName="std_ArticleSearch_PopUp.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="Std_Import" Comment="Mini-Module for article selection">
+      <Instances>
+		<Instance Instance_Alias="Std_Import"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/import"
+				  DirectLink_FileName="MiniModule_Std_Import.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="Std_NumberRanges" Comment="Mini-Module for manipulation of numberrange elements">
+      <Instances>
+		<Instance Instance_Alias="Std_NumberRange01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/numberranges"
+				  DirectLink_FileName="Std_NumberRanges.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="admin_Accounts" Comment="Mini-Module for accounts editing">
+      <Instances>
+		<Instance Instance_Alias="AdmAccount01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/adminaccounts"
+				  DirectLink_FileName="admin_Accounts.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_Dic_Editor" Comment="Mini-Module for dictionary word editing">
+      <Instances>
+		<Instance Instance_Alias="DicEd01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/diceditor"
+				  DirectLink_FileName="std_Dic_Editor.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="Std Article Search Component" Comment="Mini-Module for dictionary word editing">
+      <Instances>
+		<Instance Instance_Alias="StdArtSearchComp"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/articlesearchcomponent"
+				  DirectLink_FileName="std_ArticleSearch_Component.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_ArticleProcurementClassification" Comment="Mini-Module for article procurement classification editing">
+      <Instances>
+		<Instance Instance_Alias="ArtProcClass01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/articleprocurementclassification"
+				  DirectLink_FileName="std_ArticleProcurementClassification.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_SetArticle" Comment="Mini-Module for set article definitions editing">
+      <Instances>
+		<Instance Instance_Alias="SetArticleDefinition01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/setarticle"
+				  DirectLink_FileName="std_SetArticle.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_QualityAssuranceAdmin" Comment="Mini-Module for administration of quality assurance rules editing">
+      <Instances>
+		<Instance Instance_Alias="QAAdmin01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/qualityassuranceadmin"
+				  DirectLink_FileName="std_QualityAssuranceAdmin.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_ArticleProcurement" Comment="Mini-Module for article supplier information">
+      <Instances>
+		<Instance Instance_Alias="ArtProc01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/articleprocurement"
+				  DirectLink_FileName="std_ArticleProcurement.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_BodyMeasureAdmin" Comment="Mini-Module for body measures administration">
+      <Instances>
+		<Instance Instance_Alias="BMAdmin01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="http://localhost:60144/std_BodyMeasureAdmin/"
+				  DirectLink_FileName="std_BodyMeasureAdmin.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_ProductionMeasuresAdmin" Comment="Mini-Module for production measures administration">
+      <Instances>
+		<Instance Instance_Alias="PMAdmin01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="http://localhost:60145/std_ProductionMeasuresAdmin/"
+				  DirectLink_FileName="std_ProductionMeasuresAdmin.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_ContactSearch" Comment="Mini-Module for contact selection">
+      <Instances>
+		<Instance Instance_Alias="ContactSearch01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/contactsearch"
+				  DirectLink_FileName="std_ContactSearch.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_OIReleaseBlockTypes" Comment="Mini-Module for contact selection">
+      <Instances>
+		<Instance Instance_Alias="OIRBlockTypes01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/oireleaseblocktypes"
+				  DirectLink_FileName="std_OIReleaseBlockTypes.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_FeedbackReasons" Comment="Mini-Module for feedback reason administration">
+      <Instances>
+		<Instance Instance_Alias="FBReasons01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/feedbackreasons"
+				  DirectLink_FileName="std_FeedbackReasons.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_MetaArticle" Comment="Mini-Module for meta article administration">
+      <Instances>
+		<Instance Instance_Alias="MetaArticle01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/metaarticle"
+				  DirectLink_FileName="std_MetaArticle.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_BTOConfiguration" Comment="Mini-Module for bto configuration administration">
+      <Instances>
+		<Instance Instance_Alias="BTOConf01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/btoconfiguration"
+				  DirectLink_FileName="std_BTOConfiguration.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <!--NEW Version 4.31-->
+    <MiniModule Name="std_PasswordEditor" Comment="Mini-Module for dictionary word editing">
+      <Instances>
+		<Instance Instance_Alias="PWDEd01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/passwordeditor"
+				  DirectLink_FileName="std_PasswordEditor.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_Text_PH_Editor" Comment="Mini-Module for standard text placeholder administration">
+      <Instances>
+		<Instance Instance_Alias="TXT_PH_Editor01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/textpheditor"
+				  DirectLink_FileName="std_Text_PH_Editor.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_BP_LaundryShelf_Admin" Comment="Mini-Module for standard BP LaundryShelf Administration">
+      <Instances>
+		<Instance Instance_Alias="BPLaubdryShelfAdmin01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="http://localhost:64123/std_BP_LaundryShelf_Admin/"
+				  DirectLink_FileName="std_BP_LaundryShelf_Admin.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_Fitting_Room" Comment="Mini-Module for standard Fitting Room">
+      <Instances>
+		<Instance Instance_Alias="std_Fitting_Room01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="http://localhost:64982/std_Fitting_Room/"
+				  DirectLink_FileName="std_Fitting_Room.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_Export" Comment="Mini-Module for exports">
+      <Instances>
+		<Instance Instance_Alias="std_Export01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/export"
+				  DirectLink_FileName="std_Export.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_Article_Accessories" Comment="Mini-Module for article accessories">
+      <Instances>
+		<Instance Instance_Alias="std_Article_Accessories"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="http://localhost:64990/std_Article_Accessories/"
+				  DirectLink_FileName="std_Article_Accessories.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_SupplierAdmin" Comment="Mini-Module for standard supplier administration">
+      <Instances>
+		<Instance Instance_Alias="std_SupplierAdmin01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/supplieradmin"
+				  DirectLink_FileName="std_SupplierAdmin.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_Procurementgroups" Comment="Mini-Module for procurement group administration">
+      <Instances>
+		<Instance Instance_Alias="stdProcurementGroup01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/procurementgroups"
+				  DirectLink_FileName="std_Procurementgroups.swf"
+		/>
+      </Instances>
+    </MiniModule>
+    <MiniModule Name="std_Concerns" Comment="Mini-Module for mandator administration">
+      <Instances>
+		<Instance Instance_Alias="stdConcerns01"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/concerns"
+				  DirectLink_FileName="std_Concerns.swf"
+		/>
+      </Instances>
+    </MiniModule>
+	<MiniModule Name="std_CostCenter" Comment="Mini-Module for cost center administration">
+      <Instances>
+		<Instance Instance_Alias="stdCostCenterO1"
+				  Instance_Version="04.00.000"
+				  DirectLink_Path="https://sszint.logixs.eda.admin.ch/minimodules/costcenter"
+				  DirectLink_FileName="std_CostCenter.swf"
+		/>
+      </Instances>
+    </MiniModule>
+  </RequiredMiniModules>
+  <GIS DocumentRoot="C:\Inetpub\wwwroot\Bilder"
+	   DocumentRoot_RelativeToApplicationRoot="../Bilder"
+	   UploadScript_RelativeToApplicationRoot="/GIS/Upload.aspx"
+	   DownloadScript_RelativeToApplicationRoot="/GIS/Download.aspx"
+	   MaxGISItemsPerFolder="500"
+	   UserImpersonation="false"
+	   Impersonate_UserName=""
+	   Impersonate_Password=""
+	   Impersonate_Domain=""
+	   RelayMode="true"
+	   Relay_MasterGISServer_DocumentRoot="http://10.160.112.22/Bilder/"
+	   Relay_MasterGISServer_UploadScript="https://sszint.logixs.eda.admin.ch/Admin/GIS/Upload.aspx"
+	   Relay_MasterGISServer_DownloadScript="https://sszint.logixs.eda.admin.ch/Admin/GIS/Download.aspx"
+  />
+  <MailServerSettings IP="mailhost.admin.ch"
+					  Port="25"
+					  UseSMTPAuth="false"
+					  SMTP_Username=""
+					  SMTP_Password=""
+					  DefaultSender="admin-defaultsender@eda.admin.ch"
+  />
+  <Initital_Settings>
+    <item VarName="PathToEntryServer" />
+    <item VarName="AGB_LinkTarget" />
+    <item VarName="ApplicationName" />
+    <item VarName="ApplyColorToCustomerLogo" />
+    <item VarName="ApplyColorToCustomerLogo_Color" />
+    <item VarName="BackgroundColor" />
+    <item VarName="BrandingLogoPath" />
+    <item VarName="BrandingLogo_ScalingFactor" />
+    <item VarName="BrandingLogoX" />
+    <item VarName="BrandingLogoY" />
+    <item VarName="Contact_LinkTarget" />
+    <item VarName="CompanyLink_LinkTarget" />
+    <item VarName="CustomerLogoX" />
+    <item VarName="CustomerLogoY" />
+    <item VarName="CustomerLogo_ScalingFactor" />
+    <item VarName="ExitModule_Allow" />
+    <item VarName="ExitModule_TargetPath" />
+    <item VarName="ExitMdule_CreateAndSend_SSO_Key" />
+    <item VarName="FailedLogin_TargetPath" />
+    <item VarName="Flash_Cookie_Path" />
+    <item VarName="FontFamily" />
+    <item VarName="FunctionIsRightdependent_ModuleAccess" />
+    <item VarName="FunctionIsRightdependent_ModuleAccess_RightID" />
+    <item VarName="Hide_LoginScreen" />
+    <item VarName="LanguageSelector_Selected" />
+    <item VarName="LanguageSelector_Unselected" />
+    <item VarName="LanguageSelector_SpaceBetweenLanguages" />
+    <item VarName="Login_Show_Leave_Module_Button" />
+    <item VarName="Login_Text_TextColor" />
+    <item VarName="Login_InfoText_TextColor" />
+    <item VarName="Login_Footer_TextColor" />
+    <item VarName="Login_Footer_BackgroundColor" />
+    <item VarName="Login_LanguageSelector_Selected" />
+    <item VarName="Login_LanguageSelector_Unselected" />
+    <item VarName="Login_LanguageSelector_SpaceBetweenLanguages" />
+    <item VarName="Login_EntryBoxX" />
+    <item VarName="Login_EntryBoxY" />
+    <item VarName="LoginBackground_Alpha" />
+    <item VarName="LoginBackground_Color" />
+    <item VarName="LogoBackground_Color" />
+    <item VarName="LogoBackground_Alpha" />
+    <item VarName="LogoPath" />
+    <item VarName="MandatorID" DoNotOverLoadWhenLoadingFullConfig="true" />
+    <item VarName="MandatorName" DoNotOverLoadWhenLoadingFullConfig="true" />
+    <item VarName="MCBackgroundColor" />
+    <item VarName="ShowBrandingLogo" />
+    <item VarName="ShowCustomerLogo" />
+    <item VarName="ThemeColor" />
+    <item VarName="ThemeColor2" />
+    <item VarName="Use_Settings_from_DataBase" />
+    <item VarName="UseBackgroundPic" />
+    <item VarName="UseBackgroundPic_Path" />
+    <item VarName="UseBackgroundPic_X" />
+    <item VarName="UseBackgroundPic_Y" />
+    <item VarName="UseBackgroundPic_ScalingFactor" />
+    <item VarName="ShowAnimations" />
+    <item VarName="Enable_Login_with_SecurityQuestion" />
+    <item VarName="PathToUserAdmin_TargetPath" />
+    <item VarName="FunctionAvailablity_Import" />
+    <item VarName="Login_Button_TextColor" />
+    <item VarName="Login_Button_Color" />
+    <item VarName="Login_LanguageSelector_X" />
+    <item VarName="Login_LanguageSelector_Y" />
+    <item VarName="Login_Footer_X" />
+    <item VarName="Login_Footer_Y" />
+    <!--NEW Version 4.31-->
+    <item VarName="Enable_Login_warning_before_AccountIsLocked" />
+    <item VarName="Enable_PWDComplexRules" />
+    <!--NEW Version 4.34-->
+    <item VarName="Login_RequestPassword_X" />
+    <item VarName="Login_RequestPassword_Y" />
+    <!--NEW Version 4.35-->
+    <item VarName="Implements_Own_LoginProcess" />
+    <!--NEW Version 4.37-->
+    <item VarName="EnumEncryptionLevel" />
+  </Initital_Settings>
+</BaseConfiguration>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2017 (x64) (http://www.altova.com) by Martin Lang (Rigilog Ag) -->
+<xs:schema xmlns:ns1="http://www.rigilog.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="NewDataSet">
+	<xs:element name="item">
+		<xs:complexType>
+			<xs:attribute name="VarName" type="xs:string"/>
+			<xs:attribute name="Type" type="xs:string"/>
+			<xs:attribute name="value" type="xs:string"/>
+			<xs:attribute name="IsActive" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ConfigFile">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="General" type="xs:string" minOccurs="0" msdata:Ordinal="1"/>
+				<xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="ApplicationEnivornment">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="item" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Design">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="General">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Login">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="LanguageSelector">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Methods">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ModuleAccess">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ModuleAccess_User">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="item" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ReportingEngine">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="item" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="LastModified" type="xs:string"/>
+			<xs:attribute name="By" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

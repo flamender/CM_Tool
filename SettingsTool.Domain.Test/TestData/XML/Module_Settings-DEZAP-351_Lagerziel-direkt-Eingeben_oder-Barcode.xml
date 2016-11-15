@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigFile version="01.00.000" created="12.04.2016 09:05"> <!-- erstmalig eingeführt bei DEZA RE2.0 -->
+	<FeatureModules Name="Lagerziel kann entweder direkt oder via Barcode eingegeben werden">
+		<!-- SQL-Statement ausführen, um UseSecondDimension auf 1 zu setzen für Regale mit UseThirdDimension = 1 -->
+		<Module Name="Log" MinRevision="63574" >
+			<General>
+				<item VarName="EnableStockStructureNavigationByCoordinateCode" IsActive="true" Type="boolean" value="true" /> <!-- DEZAP-351 -->
+			</General>
+			<MModule Name="InventoryAdHoc" MinRevision="63586" />
+			<MModule Name="Receipt" MinRevision="63589" />
+			<MModule Name="ReceiptFromFeedback" MinRevision="63591"/>
+			<MModule Name="StockTransfer" MinRevision="63594" />
+			<MModule Name="StockStructure" MinRevision="63605"/>
+		</Module>
+		<MModule Name="InventoryAdHoc" MinRevision="63586" >
+			<std_InvAdHoc>
+				<item VarName="EnableStockStructureNavigationByCoordinateCode" IsActive="true" Type="boolean" value="true" /> <!-- DEZAP-351 -->
+			</std_InvAdHoc>
+		</MModule>
+		<MModule Name="Receipt" MinRevision="63589" >
+			<Std_Receipt>
+				<item VarName="EnableStockStructureNavigationByCoordinateCode" IsActive="true" Type="boolean" value="true" /> <!-- DEZAP-351 -->
+			</Std_Receipt>
+		</MModule>
+		<MModule Name="ReceiptFromFeedback" MinRevision="63591" >
+			<Storage>
+				<item VarName="EnableStockStructureNavigationByCoordinateCode" IsActive="true" Type="boolean" value="true" /> <!-- DEZAP-351 -->
+			</Storage>
+		</MModule>
+		<MModule Name="StockTransfer" MinRevision="63594" >
+			<Module>
+				<item VarName="EnableStockStructureNavigationByCoordinateCode" IsActive="true" Type="boolean" value="true" /> <!-- DEZAP-351 -->
+			</Module>
+		</MModule>
+		<MModule Name="StockStructure" MinRevision="63605" >
+			<StockStructureLocationRules>
+				<item VarName="EnableStockStructureNavigationByCoordinateCode" IsActive="true" Type="boolean" value="true" /> <!-- DEZAP-351 -->
+			</StockStructureLocationRules>
+		</MModule>
+	</FeatureModules>
+</ConfigFile>

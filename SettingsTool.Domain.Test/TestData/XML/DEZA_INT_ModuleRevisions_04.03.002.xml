@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigFile Created="14.09.2016 09:35"> <!-- adapted CK 05.10.2016 11:50 -->
+<CustomerSettings>
+<Item Name="CustomerSettings" Revision="76153"/> <!-- IE-1150 -->
+</CustomerSettings>
+  <MainModule>
+	<Item Name="base" Revision="102573" /> <!-- IE-664 -->
+    <Item Name="com" Revision="102413"/> <!-- DEZAP-1376 -->
+	<Item Name="installcheck" Revision="102391"/> <!-- kann jetzt auch leere Ordner behandeln -->
+	<Item Name="log" Revision="91767"/> <!-- DEZAP-1319 -->
+  </MainModule>
+  <MiniModule>
+	<Item Name="articleprocurementclassification" Revision="88344"/> <!-- IE-664 -->
+	<Item Name="articleservicepoint" Revision="102904"/> <!-- DEZAP-1367, DEZAP-1319 (Rev. 102438)-->
+	<Item Name="concerns" Revision="87889"/> <!-- IE-664 -->
+	<Item Name="export" Revision="93797"/> <!-- IE-664, IE-1150 -->
+	<Item Name="import" Revision="102035"/> <!-- IE-664 -->
+	<Item Name="stockstructure" Revision="87895"/> <!-- IE-664 -->
+	<Item Name="receiptfromfeedback" Revision="93819" /> <!--DEZAP-1319-->
+  </MiniModule>
+  <Plugins>
+
+  </Plugins>
+  <MSI>
+
+  </MSI>
+  <Settings />
+</ConfigFile>
