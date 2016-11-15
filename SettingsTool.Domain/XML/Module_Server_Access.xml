@@ -2,7 +2,7 @@
 <ModuleServerAccessInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Connections>
     <Connection Active="true">
-      <ServerInfo IP_or_DNSName="test-db.rigilog.com" InstanceName="" Port="1435" DatabaseName="MIB" UserName="dbo_MIB" Password="HBISJOIHBFIEUFGB(/$§G" UseSSPI="false" />
+      <ServerInfo IP_or_DNSName="test-db.rigilog.com" InstanceName="" Port="1435" DatabaseName="MIB" UserName="dbo_MIB" Password="123456" UseSSPI="false" />
       <UsedProvider>SQLOLEDB</UsedProvider>
     </Connection>
   </Connections>
