@@ -40,6 +40,7 @@ namespace TestConfiguration
             var noItems1 = coc.NoOfItems();
             var noSubfolder1 = coc.NoOfItemSubfolders();
             Assert.AreEqual(noItems, noItems1);
+            // Git Test XXX
             Assert.AreEqual(noSubfolder, noSubfolder1);
         }
 

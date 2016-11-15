@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SettingsTool.Domain/bin/Debug
+/SettingsTool.Domain/obj/Debug
+/SettingsTool.Domain.Test/bin/Debug
+/SettingsTool.Domain.Test/obj/Debug
