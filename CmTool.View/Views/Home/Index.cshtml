@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CmTool.View.Models.CommentModel>
+@{
+	Layout = "_Layout";
+}
+<html>
+<body>	    
+	@Html.React("CommentBox", new { initialData = Model, url = Url.Action("Comments"), submitUrl = Url.Action("AddComment"), pollInterval = 2000})       			
+	@Html.ReactInitJavaScript()
+</body>
+
+</html>

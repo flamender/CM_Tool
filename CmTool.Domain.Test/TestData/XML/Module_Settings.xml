@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigFile version="4.00.184" created="20.03.2013 18:00:00">
+   <item VarName="ApplicationName" IsActive="true" Type="string" value="Austrian - admin Modul" />
+   <item VarName="MCBackgroundColor" IsActive="true" Type="string" value="#FFFFFF" />
+   <Fonts>
+      <item VarName="FontFamily" IsActive="true" Type="string" value="Verdana" />
+      <item VarName="FontFormat" IsActive="true" Type="string" value="Verdana" />
+   </Fonts>
+   <ApplicationEnivornment>
+      <item VarName="ShowExitModule" IsActive="true" Type="boolean" value="False" />
+      <item VarName="ExitModule_Allow" IsActive="true" Type="boolean" value="True" />
+      <item VarName="PathToUserAdmin_TargetPath" IsActive="true" Type="string" value="/User/" />
+      <item VarName="ExitModule_TargetPath" IsActive="true" Type="string" value="/admin/" />
+      <item VarName="FailedLogin_TargetPath" IsActive="true" Type="string" value="" />
+      <item VarName="ExitMdule_CreateAndSend_SSO_Key" IsActive="true" Type="boolean" value="False" />
+      <item VarName="ObjectPathToMachineInfo" IsActive="true" Type="string" value="Flash.POST_Admin_Tool" />
+      <item VarName="Use_Settings_from_DataBase" IsActive="true" Type="boolean" value="False" />
+      <item VarName="EnumEncryptionLevel" IsActive="true" Type="string" value="Encryption_Standard" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+      <item VarName="PathToEntryServer" IsActive="true" Type="string" value="" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+   </ApplicationEnivornment>
+   <MailServerSettings>
+      <item VarName="ServerIP" IsActive="true" Type="string" value="mailgw.zugseil.eu" />
+      <item VarName="SenderAddress" IsActive="true" Type="string" value="info@zugseil.com" />
+      <item VarName="SMTP_Username" IsActive="true" Type="string" value="SMTPMailServer" />
+      <item VarName="SMTP_Password" IsActive="true" Type="string" value="bw@2NmKM" />
+      <item VarName="UseSMTPAuth" IsActive="true" Type="boolean" value="True" />
+      <item VarName="ServerPort" IsActive="true" Type="integer" value="25" />
+      <item VarName="AllowUserAddress" IsActive="true" Type="boolean" value="True" />
+      <item VarName="AllowSeparateMails" IsActive="true" Type="boolean" value="True" />
+      <item VarName="TechnicalSupportAddress" IsActive="true" Type="string" value="zollinger@zugseil.com" />
+      <item VarName="ComplaintManagementAddress" IsActive="true" Type="string" value="zollinger@zugseil.com" />
+      <item VarName="SenderMailAddressForEmployeeImport" IsActive="true" Type="string" value="" />
+   </MailServerSettings>
+   <SingleSignOn>
+      <item VarName="Hide_LoginScreen" IsActive="true" Type="boolean" value="False" />
+   </SingleSignOn>
+   <DesignRelated>
+      <item VarName="BackgroundColor" IsActive="true" Type="color" value="0xD42E12" />
+      <item VarName="LogoPath" IsActive="true" Type="string" value="Ressources/aua_logo.swf" />
+      <item VarName="BrandingLogoPath" IsActive="true" Type="string" value="Ressources/aua_logo.swf" />
+      <Theme>
+         <item VarName="ThemeColor" IsActive="true" Type="color" value="0xD42E12" />
+         <item VarName="ThemeColor2" IsActive="true" Type="color" value="0x9BC4E2" />
+         <item VarName="ThemeColor_grids" IsActive="true" Type="color" value="0x9BC4E2" />
+      </Theme>
+      <Startscreen>
+         <item VarName="UseBackgroundPic" IsActive="true" Type="boolean" value="False" />
+         <item VarName="UseBackgroundPic_Path" IsActive="true" Type="string" value="" />
+         <item VarName="UseBackgroundPic_X" IsActive="true" Type="double" value="40" />
+         <item VarName="UseBackgroundPic_Y" IsActive="true" Type="double" value="0" />
+         <item VarName="UseBackgroundPic_ScalingFactor" IsActive="true" Type="double" value="1" />
+         <item VarName="ShowBrandingLogo" IsActive="true" Type="boolean" value="False" />
+         <item VarName="BrandingLogo_ScalingFactor" IsActive="true" Type="double" value="1" />
+         <item VarName="BrandingLogoX" IsActive="true" Type="double" value="200" />
+         <item VarName="BrandingLogoY" IsActive="true" Type="double" value="111" />
+         <item VarName="ShowCustomerLogo" IsActive="true" Type="boolean" value="True" />
+         <item VarName="CustomerLogoX" IsActive="true" Type="double" value="750" />
+         <item VarName="CustomerLogoY" IsActive="true" Type="double" value="480" />
+         <item VarName="CustomerLogo_ScalingFactor" IsActive="true" Type="double" value="0.5" />
+         <item VarName="ApplyColorToCustomerLogo" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ApplyColorToCustomerLogo_Color" IsActive="true" Type="color" value="0xFFFFFF" />
+         <item VarName="LogoBackground_Color" IsActive="true" Type="color" value="0x0094DE" />
+         <item VarName="LogoBackground_Alpha" IsActive="true" Type="double" value="100" />
+         <item VarName="LoginBackground_Alpha" IsActive="true" Type="double" value="100" />
+         <item VarName="AGB_LinkTarget" IsActive="true" Type="string" value="" />
+         <item VarName="Contact_LinkTarget" IsActive="true" Type="string" value="mailto:teamuniform@austrian.com" />
+         <item VarName="CompanyLink_LinkTarget" IsActive="true" Type="string" value="http://www.austrian.com" />
+         <item VarName="LoginBackground_Color" IsActive="true" Type="color" value="0xD42E12" />
+         <item VarName="Enable_Login_with_SecurityQuestion" IsActive="true" Type="boolean" value="false" />
+         <item VarName="Login_Show_Leave_Module_Button" IsActive="true" Type="boolean" value="False" />
+         <item VarName="Login_Text_TextColor" IsActive="true" Type="color" value="0xFFFFFF" />
+         <item VarName="Login_InfoText_TextColor" IsActive="true" Type="color" value="0xFFFFFF" />
+         <item VarName="Login_LanguageSelector_Selected" IsActive="true" Type="color" value="0xFFFFFF" />
+         <item VarName="Login_LanguageSelector_Unselected" IsActive="true" Type="color" value="0x000000" />
+         <item VarName="Login_LanguageSelector_SpaceBetweenLanguages" IsActive="true" Type="integer" value="5" />
+         <item VarName="Login_Footer_TextColor" IsActive="true" Type="color" value="0x000000" />
+         <item VarName="Login_Footer_BackgroundColor" IsActive="true" Type="color" value="0xFFFFFF" />
+         <item VarName="Login_EntryBoxX" IsActive="true" Type="double" value="132" />
+         <item VarName="Login_EntryBoxY" IsActive="true" Type="double" value="192" />
+         <item VarName="Login_Button_TextColor" IsActive="true" Type="color" value="0xFFFFFF" />
+         <item VarName="Login_Button_Color" IsActive="true" Type="color" value="0x000000" />
+         <item VarName="Login_LanguageSelector_X" IsActive="true" Type="double" value="637.3" />
+         <item VarName="Login_LanguageSelector_Y" IsActive="true" Type="double" value="215.15" />
+         <item VarName="Login_Footer_X" IsActive="true" Type="double" value="132.2" />
+         <item VarName="Login_Footer_Y" IsActive="true" Type="double" value="579.8" />
+         <item VarName="Enable_Login_warning_before_AccountIsLocked" IsActive="true" Type="boolean" value="true" />
+         <item VarName="Enable_PWDComplexRules" IsActive="true" Type="boolean" value="true" />
+         <item VarName="Login_RequestPassword_X" IsActive="true" Type="double" value="637" />
+         <item VarName="Login_RequestPassword_Y" IsActive="true" Type="double" value="302" />
+         <item VarName="Implements_Own_LoginProcess" IsActive="true" Type="boolean" value="true" />
+      </Startscreen>
+      <Mainscreen>
+         <item VarName="TopBarInCIColor" IsActive="true" Type="boolean" value="False" />
+         <item VarName="PlaceLogoInMainScreen_1" IsActive="true" Type="boolean" value="False" />
+         <item VarName="LogoPath_1" IsActive="true" Type="string" value="Ressources/i_logo_austrian.gif" />
+         <item VarName="LogoPath_1_X" IsActive="true" Type="double" value="25" />
+         <item VarName="LogoPath_1_Y" IsActive="true" Type="double" value="330" />
+         <item VarName="LogoPath_1_Scaling" IsActive="true" Type="double" value="1" />
+         <item VarName="PlaceLogoInMainScreen_2" IsActive="true" Type="boolean" value="True" />
+         <item VarName="LogoPath_2" IsActive="true" Type="string" value="Ressources/i_logo_austrian.gif" />
+         <item VarName="LogoPath_2_X" IsActive="true" Type="double" value="830" />
+         <item VarName="LogoPath_2_Y" IsActive="true" Type="double" value="-269" />
+         <item VarName="LogoPath_2_Scaling" IsActive="true" Type="double" value="0,8" />
+      </Mainscreen>
+      <Standard_Menu_Design>
+         <item VarName="MenuItemColor_Text_Regular" IsActive="true" Type="color" value="0x000000" />
+         <item VarName="MenuItemColor_Text_MouseOver" IsActive="true" Type="color" value="0xD42E12" />
+         <item VarName="MenuItemColor_Background_Regular" IsActive="true" Type="color" value="0x9BC4E2" />
+         <item VarName="MenuItemColor_Background_Selected" IsActive="true" Type="color" value="0xD42E12" />
+         <item VarName="MenuItemColor_Background_Submenu" IsActive="true" Type="color" value="0x9BC4E2" />
+         <item VarName="TreeSubMenuBackgroundColor" IsActive="true" Type="color" value="0x7AABDE" />
+      </Standard_Menu_Design>
+      <LanguageSelector>
+         <item VarName="LanguageSelector_Selected" IsActive="true" Type="color" value="0xFFFFFF" />
+         <item VarName="LanguageSelector_Unselected" IsActive="true" Type="color" value="0x000000" />
+         <item VarName="LanguageSelector_SpaceBetweenLanguages" IsActive="true" Type="integer" value="5" />
+      </LanguageSelector>
+      <SearchResultPane>
+         <item VarName="SearchResultPaneHeader" IsActive="true" Type="color" value="0x0094DE" />
+         <item VarName="SearchResultPaneRow" IsActive="true" Type="color" value="0xC0C0C0" />
+         <item VarName="SearchResultPaneRowSelected" IsActive="true" Type="color" value="0x0094DE" />
+      </SearchResultPane>
+      <MeasuresSizePane>
+         <item VarName="ColNormalStatus" IsActive="true" Type="color" value="0xC0C0C0" />
+         <item VarName="ColRollOverStatus" IsActive="true" Type="color" value="0xE7EFF7" />
+         <item VarName="ColSelectedStatus" IsActive="true" Type="color" value="0xE7EFF7" />
+      </MeasuresSizePane>
+   </DesignRelated>
+   <MainInfo>
+      <item VarName="Transfer_from_catalog_to_catalog" IsActive="true" Type="boolean" value="true" />
+      <item VarName="IsAllowedToCreateNewMainMandator" IsActive="true" Type="boolean" value="False" />
+      <item VarName="IsoCodeForDimensionsMustBeFilled" IsActive="true" Type="boolean" value="False" />
+      <item VarName="UseTreeForArticleClasses" IsActive="true" Type="boolean" value="True" />
+      <item VarName="ArticleClassSearch_Show_Maximum_QueryResult_Hits" IsActive="true" Type="integer" value="100" />
+      <item VarName="Assign_access_right_to_new_costcenter_or_unit_to_everyone" IsActive="true" Type="boolean" value="False" />
+      <item VarName="Include_Suppliers_in_NewsDistribution" IsActive="true" Type="boolean" value="False" />
+      <item VarName="Disable_MM_stdProcurementGroup" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 12.03.2015 14:23:30 -->
+      <item VarName="Disable_MM_stdConcern" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 12.03.2015 14:23:30 -->
+      <item VarName="Enable_MiniModule_ContactInformation" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 06.08.2015 00:49:47 -->
+      <item VarName="Enable_MM_stdCostCenter" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 24.10.2015 00:48:11 -->
+      <DMSServer>
+         <item VarName="GISServer_UploadScriptPath" IsActive="true" Type="string" value="" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="GISServer_DownloadScriptPath" IsActive="true" Type="string" value="" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="GISServer_ShowScriptPath" IsActive="true" Type="string" value="" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+      </DMSServer>
+      <General>
+         <item VarName="MandatorID" IsActive="true" Type="string" value="26c91613-a409-41df-9d67-ee5a6a51e2f0" />
+         <item VarName="MandatorName" IsActive="true" Type="string" value="Austrian Airlines Konzern" />
+         <item VarName="MasterLanguageID" IsActive="true" Type="integer" value="1" />
+         <item VarName="DefaultPriceList" IsActive="true" Type="string" value="" />
+         <item VarName="DefaultSalesType" IsActive="true" Type="string" value="00000000-0000-0000-0000-000000000000" />
+         <item VarName="DefaultCurrency" IsActive="true" Type="string" value="37ce8993-c09c-4f75-991a-457a632b6c1d" />
+         <item VarName="DefaultCurrencyName" IsActive="true" Type="string" value="â‚¬" />
+         <item VarName="UID_UserRights" IsActive="true" Type="string" value="b795e6d8-213d-4036-8d00-e8757816f358" />
+         <item VarName="UID_OpenActions" IsActive="true" Type="string" value="b2a2109a-b20c-4b46-9e58-1b2e7a06b0ab" />
+         <item VarName="AccessSelectionOnlyOnGroupLevel" IsActive="true" Type="boolean" value="False" />
+         <item VarName="AdministrativeGroupID" IsActive="true" Type="string" value="78e08321-d995-4def-b125-415d5537a9c5" />
+      </General>
+      <Prints>
+         <item VarName="PrintLogo_GISServer_DocumentRoot" IsActive="true" Type="string" value="" /> <!-- New Setting added by ModuleCockpit on 15.10.2015 14:20:46 -->
+         <item VarName="LogoContainername_For_Printing" IsActive="true" Type="string" value="" /> <!-- New Setting added by ModuleCockpit on 15.10.2015 14:20:46 -->
+         <item VarName="Report_ETAT_AliasTypeID" IsActive="true" Type="string" value="" /> <!-- New Setting added by ModuleCockpit on 15.10.2015 14:20:46 -->
+      </Prints>
+      <SAP_Interface_Request>
+         <item VarName="RequestReceiver" IsActive="true" Type="string" value="PostLogistics FuBe" />
+         <item VarName="RequestSender" IsActive="true" Type="string" value="Admin" />
+         <MaterialChanged_Interface_Request>
+            <item VarName="MCH_Transmit_ArticleUpdateRequest_to_Thridpartysystem" IsActive="true" Type="boolean" value="False" />
+            <item VarName="MCH_Transmit_ArticleUpdateRequest_to_Thridpartysystem_Only_if_Article_is_member_of_certain_Mandator" IsActive="true" Type="boolean" value="False" />
+            <item VarName="MCH_Transmit_ArticleUpdateRequest_to_Thridpartysystem_Only_MandatorID" IsActive="true" Type="string" value="00000000-0000-0000-0000-000000000000" />
+            <item VarName="MCH_RequestType" IsActive="true" Type="string" value="MaterialChanged" />
+            <item VarName="MCH_RequestText" IsActive="true" Type="string" value="Article data was changed" />
+         </MaterialChanged_Interface_Request>
+         <AvailableFunctions>
+            <item VarName="Allow_Live_MaterialChanged" IsActive="true" Type="boolean" value="False" />
+         </AvailableFunctions>
+      </SAP_Interface_Request>
+      <ArticleAdmin>
+         <item VarName="EnableRole_Supplier" IsActive="true" Type="boolean" value="True" />
+         <item VarName="Supplier_RoleID" IsActive="true" Type="string" value="166b5d33-66c3-4933-b829-8f8484c4c57c" />
+         <item VarName="ArticleChanged_Sendmail" IsActive="true" Type="boolean" value="False" />
+         <item VarName="ArticleChanged_SendmailAddress" IsActive="true" Type="string" value="mhoeschen@zugseil.com" />
+         <item VarName="Disallow_creation_of_articles_in_submandator" IsActive="true" Type="boolean" value="True" />
+         <ArticleCreation>
+            <item VarName="ArticleNo_GenerateAutomatically" IsActive="true" Type="boolean" value="False" />
+            <item VarName="ArticleNo_NumberRangeID" IsActive="true" Type="string" value="00000000-0000-0000-0000-000000000000" />
+         </ArticleCreation>
+      </ArticleAdmin>
+      <SizeAdmin>
+         <item VarName="UseSizeUP1" IsActive="true" Type="boolean" value="True" />
+         <item VarName="UseSizeUP2" IsActive="true" Type="boolean" value="False" />
+         <item VarName="UseSizeUP3" IsActive="true" Type="boolean" value="False" />
+         <item VarName="SizeUP1" IsActive="true" Type="string" value="2ff605a5-7937-4957-b23c-a3306f2e7ef1" />
+         <item VarName="SizeUP2" IsActive="true" Type="string" value="ed7b6119-7c36-4511-ba89-9527eb453200" />
+         <item VarName="SizeUP3" IsActive="true" Type="string" value="00000119-7c36-4511-ba89-9527eb453200" />
+         <item VarName="SizeUP1_UIText" IsActive="true" Type="string" value="Massgrösse" />
+         <item VarName="SizeUP2_UIText" IsActive="true" Type="string" value="Randgrösse" />
+         <item VarName="SizeUP3_UIText" IsActive="true" Type="string" value="SizeUP3_UIText" />
+         <item VarName="Dimension_Delimiter" IsActive="true" Type="string" value="" />
+      </SizeAdmin>
+      <ArticleSearch>
+         <item VarName="ArticleSearch_Show_ArticlePane_Until_ArticleCount_Reached" IsActive="true" Type="integer" value="100" />
+         <item VarName="ArticleSearch_IsSupplierRestriction" IsActive="true" Type="boolean" value="False" />
+         <item VarName="ArticleSearch_Enabled_ArticlePane_Until_ArticleCount_Reached" IsActive="true" Type="boolean" value="False" />
+         <item VarName="ArticleSearch_Show_All_Article_Inheritance_To_SubMandator" IsActive="true" Type="boolean" value="False" />
+         <item VarName="ArticleSearch_LoadArticleClasses" IsActive="true" Type="boolean" value="False" />
+      </ArticleSearch>
+      <ArticleDetailsView>
+         <item VarName="ArticleSearch_Allow_access_to_additionalProperties" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_Allow_PDF_download" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_Allow_Picture_display" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_Show_Prices" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_ShowOnly_StdCurreny" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_ShowOnly_StdPriceList" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_ShowOnly_StdSalesType" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_PDF_StandardDocumentName" IsActive="true" Type="string" value="Artikelbeschreibung (PDF)" />
+         <item VarName="ArticleSearch_Picture_StandardDocumentName" IsActive="true" Type="string" value="Bild" />
+         <item VarName="ArticleSearch_Show_ArticlePointValue_within_pricelist" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_PictureLabel_StandardDocumentName" IsActive="true" Type="string" value="Etikette" />
+         <item VarName="ArticleSearch_PictureTable_StandardDocumentName" IsActive="true" Type="string" value="Tabelle" />
+         <item VarName="ArticleSearch_Show_UVP" IsActive="true" Type="boolean" value="True" />
+         <item VarName="ArticleSearch_UVPID" IsActive="true" Type="string" value="" />
+         <item VarName="ArticleSearch_UVP_Name" IsActive="true" Type="string" value="Normen" />
+         <item VarName="ArticleSearch_Show_UVP_and_PicturesLabelAndTable_instead_AvailabilityOnStock" IsActive="true" Type="boolean" value="False" />
+         <item VarName="ArticleSearch_ShowArticleIsObsolet" IsActive="true" Type="boolean" value="False" />
+         <item VarName="ArticleSearch_ShowArticleAliases" IsActive="true" Type="boolean" value="False" />
+      </ArticleDetailsView>
+      <BusisnesspartnersActivities>
+         <item VarName="Enable_Activity_Office_Assignment_Administration" IsActive="true" Type="boolean" value="True" />
+      </BusisnesspartnersActivities>
+      <StorehouseSetup>
+         <item VarName="Enable_StorehouseSetup" IsActive="true" Type="boolean" value="True" />
+      </StorehouseSetup>
+      <StockstructureSelector>
+         <item VarName="StockStructureSelector_Dont_show_virtual" IsActive="true" Type="boolean" value="False" />
+         <item VarName="StockStructureSelector_Show_only_virtual" IsActive="true" Type="boolean" value="False" />
+      </StockstructureSelector>
+      <OfficeAdministration>
+         <item VarName="Standard_CRMAddresstypeID_BillingAddress" IsActive="true" Type="string" value="ba1ff3ab-5a4e-4138-925a-2114e2a3649a" />
+         <item VarName="Standard_CRMAddresstypeID_ShippingAddress" IsActive="true" Type="string" value="b92a2122-a191-4e87-bb7d-13db7213db95" />
+         <item VarName="FieldMandatory_Office_ForeignKey" IsActive="true" Type="boolean" value="false" />
+      </OfficeAdministration>
+      <CostCenterAdministration>
+         <item VarName="Default_OfficeID_for_AccountType_CC" IsActive="true" Type="string" value="" />
+         <item VarName="Default_OfficeID_for_AccountType_IN" IsActive="true" Type="string" value="" />
+         <item VarName="FieldMandatory_CostCenter_ForeignKey" IsActive="true" Type="boolean" value="False" />
+      </CostCenterAdministration>
+      <EntitlementAdministration>
+         <item VarName="Show_Extended_Entitlement_Layout" IsActive="true" Type="boolean" value="false" />
+         <item VarName="NumberTextInput_TextAlign" IsActive="true" Type="string" value="left" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="EntitlementOverview_ShowEntitlementReport" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 26.05.2015 10:18:08 -->
+      </EntitlementAdministration>
+      <PointRunInfo>
+         <item VarName="Default_Pointrun_Algorithm" IsActive="true" Type="string" value="Algorithm_AutrianAirlines" />
+         <item VarName="EnablePointRunType_Algorithm_SBB" IsActive="true" Type="boolean" value="False" />
+         <item VarName="EnablePointRunType_Algorithm_AustrianAirlines" IsActive="true" Type="boolean" value="True" />
+         <item VarName="EnablePointRunType_Algorithm_BVB" IsActive="true" Type="boolean" value="False" />
+         <item VarName="EnablePointRunType_Algorithm_default_reset_contingent" IsActive="true" Type="boolean" value="false" />
+         <item VarName="EnablePointRunType_Algorithm_Default_Expiry" IsActive="true" Type="boolean" value="false" />
+         <item VarName="EnablePointRunType_Algorithm_Default_Addition" IsActive="true" Type="boolean" value="False" />
+         <item VarName="EnablePointRunType_Algorithm_Default_Addition_InitialPointsCapped" IsActive="true" Type="boolean" value="False" />
+         <item VarName="EnablePointRunType_Algorithm_STP" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 15.10.2015 14:20:46 -->
+      </PointRunInfo>
+      <QuantityOrderInDefaultSettings>
+         <item VarName="Partial_Delivery_allowed_when_ordering_on_remote_stock" IsActive="true" Type="boolean" value="True" />
+         <item VarName="Maximum_SourceWarehouses_Per_Order_to_remote_stock" IsActive="true" Type="integer" value="2" />
+         <item VarName="DefaultShipmentTypeID" IsActive="true" Type="string" value="00000000-0000-0000-0000-000000000000" />
+         <item VarName="PersonalPoint_OrderProcessTypeID" IsActive="true" Type="string" value="7af94475-9b99-469a-b7b0-72238c4be406" />
+         <item VarName="DefaultShipmentStock" IsActive="true" Type="string" value="00000000-0000-0000-0000-000000000000" />
+         <item VarName="UseLocalStockWithInUnits" IsActive="true" Type="boolean" value="True" />
+         <item VarName="Use_Article_ForShipmentCostBilling" IsActive="true" Type="boolean" value="False" />
+         <item VarName="Set_OrderIsActivated" IsActive="true" Type="boolean" value="True" />
+      </QuantityOrderInDefaultSettings>
+   </MainInfo>
+   <Dictionary>
+      <ContactPage>
+         <item VarName="Contact_Line1_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line1" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line2_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line2" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line3_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line3" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line4_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line4" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line5_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line5" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line6_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line6" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line7_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line7" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line8_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line8" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line9_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line9" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line10_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line10" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line11_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line11" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line12_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line12" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line13_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line13" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line14_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line14" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Contact_Line15_Dic" IsActive="true" Type="string" value="ContactPage.Contact_Line15" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+      </ContactPage>
+   </Dictionary>
+   <FunctionAvailability>
+      <item VarName="FunctionAvailability_For_SuperUsers_Of_Subsidiary_Companies" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_Catalog" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_Catalog_ImportFromFile" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_Article_Catalog_Structure_Mapping" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleClass" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_ArticleClass_CreateNew" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_ArticleClassFolder_CreateNew" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_CapacityUsage" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_StorageLocations" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_CostcenterAdministration" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_OfficeAdministration" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_CreateArticle" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_SearchArticle" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_isObsolete" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_ArticleClass_Show_Checkbox_IsSelfProduced" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_SingleArticleTracking" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ImmaterialArticle" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_DefaultSupplier" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_GoodsAccount" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ArticleContingentUsage_Reuse" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleContingentUsage_UsagePeriod" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_Article_ScaledPricing" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_Article_BundleOrder" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_Article_Salesprices" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_Pointrun_inGeneral" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_Pointrun_on_EmployeeLevel" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_Pointrun_on_UnitLevel" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_Pointrun_on_ActivityLevel" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_Pointrun_on_MandatorLevel" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_PrintOfflineOrderSlips_General" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_PrintOfflineOrderSlips_Single" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_PrintOfflineOrderSlips_Mass" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_Statistics" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_CurrencyAdministration" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_NumberRangesAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_SupplierAdministration" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_SupplyChainRules" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_CountryAdministration" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_ShipConditions" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_PaymentTypes" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_FinishingRules" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_BankCodeAdmin" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_ContingentAdministration" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_SalesTypeAdministration" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_Catalog_Article_Transferring" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_CustomerNews" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_UpdatePointBudgetOfBP" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_CopyPricelists" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_SupplyChainManagement" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ChangeArticleClass" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_DefineViewDetails" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_CustomerAdministration" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_SupplyChainRegionsAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MultimandatorFunctionsTransferArticles" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_TransparentSupplyChain" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_OwnerForeignKey" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_Article_SimiliarArticles" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_BodyMeasuresAdministration" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ProductionMeasuresAdministration" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_InheritanceSizeAndBTOsOfBusinesspartners" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_Import" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_Article_Salesprices_PerSize" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_AccountsAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_EntitlementPhasesAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_PaymentTargetAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_FiscalYearAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_VATAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_PackageTypeAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ProcurementGroupAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ProductStructureAdmin" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ReturnTransactionReasonsAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_DeliveryHeaderShippingChargeLevelsAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_AddArticleInSubMandantor" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_PackageAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleOfficeJointProperties" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_LeasingArticle" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_Patch" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_RFID" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_RentArticle" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_UsesBatchNumbers" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleProcurementClassificationAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ProcurementClassification" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_TransportRestriction" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_Requires_QualityAssurance" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_SetArticle" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_QualityAssuranceAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleSearchComponent" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ArticleWithWarranty" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_EnabledForServiceProcess" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ArticleMaterialMasterDataSheet" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_OrderIn_ReleasBlockTypes" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionAvailablity_ArticleCatalog_BlockArticleTransfer_for_Structure_or_Article" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_FeedbackReasonsAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_MetaArticle" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_Article_TariffClassification" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ShipmenttypeAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_BPChangeReasonsAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_PricelistAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_PackageFormAdministration" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MandatorAdministration_Enable_SalesPriceUpdateOfArticlesInheritedToTargetmandators" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MandatorAdministration_Enable_AutomaticPriceUpdatesOfInheritedArticles" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MandatorAdministration_Enable_MandatorNameChanges_during_Articletransfer" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MandatorAdministration_Enable_IsRemoteMandator" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MultimandatorFunctionsInSubMandantor" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_OrderLotSize" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_MinimumOrderQuantity" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_Weight" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_Dimensions" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_Volume" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_OriginCountry" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_RemoveLogo" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ReplaceLogo" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ProvidedToCustomerDirectlyBySupplier" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MandatorAdministration_LoginRules" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_CommissionRate" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionAvailablity_TextPlaceholderEditor" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_MandatorAdministration_ProcurementLimits" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_CostcenterAdministration_Use_CostCenterTypes" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_ConsumableArticle" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleAliasGenerator" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_BPLaundryShelfAdministration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_BPLaundryShelfAdministrationSimpleMode" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+      <item VarName="FunctionAvailablity_FittingRoom" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_Export" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_UpdateArticleInstances_NextServiceDates" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_IsUsableInRefurbishmentcycle_Depending_On_ArticleTracking" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_ArticleBaseData_WashService" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FunctionAvailablity_Accessories" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionAvailablity_PrinterAdministration" IsActive="true" Type="boolean" value="true" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+      <item VarName="FunctionAvailablity_CarrierAdministration" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 04.08.2015 00:48:36 -->
+   </FunctionAvailability>
+   <FunctionRightDepency>
+      <item VarName="FunctionIsRightdependent_PrintOfflineOrderSlips" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionIsRightdependent_PrintOfflineOrderSlips_RightID" IsActive="true" Type="string" value="33302f0e-064a-42e1-b2ce-b327facd839b" />
+      <item VarName="FunctionIsRightdependent_CreateArticle" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionIsRightdependent_CreateArticle_RightID" IsActive="true" Type="string" value="5f9d60ac-1c39-43fd-9b5f-4b7e3847b7c1" />
+      <item VarName="FunctionIsRightdependent_SearchArticle" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionIsRightdependent_SearchArticle_RightID" IsActive="true" Type="string" value="7c76a475-9048-43c1-b6b0-a243339c6e2d" />
+      <item VarName="FunctionIsRightdependent_Pointruns" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionIsRightdependent_Pointruns_RightID" IsActive="true" Type="string" value="fce1dc81-f7a4-487b-87c8-d3e415317406" />
+      <item VarName="FunctionIsRightdependent_ModuleAccess" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FunctionIsRightdependent_ModuleAccess_RightID" IsActive="true" Type="string" value="0be4cc1c-7c8d-4fa4-82b7-d44ad2bd5aae" />
+      <item VarName="FunctionIsRightdependent_ContingentAdministration" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionIsRightdependent_ContingentAdministration_RightID" IsActive="true" Type="string" value="84f3a153-13d7-455c-995c-0c80afa306ee" />
+      <item VarName="FunctionIsRightdependent_AddArticleInSubMandantor" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FunctionIsRightdependent_AddArticleInSubMandantor_RightID" IsActive="true" Type="string" value="9d150e49-6e47-42e6-9dc6-8fae911a07b1" />
+      <item VarName="FunctionIsRightdependent_ArticleAdministration" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionIsRightdependent_ArticleAdministration_RightID" IsActive="true" Type="string" value="d5b38885-eae8-4b7e-812b-97125b348c75" />
+      <item VarName="FunctionIsRightdependent_DeleteArticle" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FunctionIsRightdependent_DeleteArticle_RightID" IsActive="true" Type="string" value="6e8ac9a8-4ca5-47f6-a1df-af3b963aafa3" />
+      <item VarName="FunctionIsRightdependent_AllowEditCurrencyExchange" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+      <item VarName="FunctionIsRightdependent_AllowEditCurrencyExchange_RightID" IsActive="true" Type="string" value="920875C8-87D1-4361-9A98-E338E6E20EE7" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+   </FunctionRightDepency>
+   <FunctionSpecialDependency>
+      <item VarName="Show_SupplierAdministration_in_submandators" IsActive="true" Type="boolean" value="False" />
+      <item VarName="Show_CustomerAdministration_in_submandators" IsActive="true" Type="boolean" value="False" />
+      <item VarName="Enable_AdvancedContingent_Addition_Functionality" IsActive="true" Type="boolean" value="true" />
+      <item VarName="BankCode_is_editable_in_submandator" IsActive="true" Type="boolean" value="true" />
+      <item VarName="Disallow_ArticleTransfer_if_TargetArticleClass_is_deleted" IsActive="true" Type="boolean" value="false" />
+      <item VarName="PaymentTerms_Enable_ForeignKey1" IsActive="true" Type="boolean" value="false" />
+      <item VarName="Show_CarrierAdministration_in_submandators" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 04.08.2015 00:48:36 -->
+   </FunctionSpecialDependency>
+   <FieldEnable>
+      <item VarName="FieldEnable_Activity_ForeignKey" IsActive="true" Type="boolean" value="true" />
+   </FieldEnable>
+   <FieldVisibility>
+      <item VarName="FieldVisibility_Activity_DefaultPoints" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FieldVisibility_Entitlement_MutationQuote" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FieldVisibility_Entitlement_MutationRateValueFemale" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FieldVisibility_Entitlement_MutationQuoteFemale" IsActive="true" Type="boolean" value="True" />
+      <item VarName="FieldVisibility_Entitlement_FreeQuantity" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FieldVisibility_CostCenter_IsProjectCostcenter" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FieldVisibility_Entitlement_ValuesAreOfficedependent" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FieldVisibility_Entitlement_IsConsideredByPointRun" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FieldVisibility_General_HideSupplyChainRegionsReference" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FieldVisibility_ArticleBaseData_HasChangeProtection_on_PrimaryWarehouse" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FieldVisibility_Entitlement_PointValue" IsActive="true" Type="boolean" value="true" />
+      <item VarName="FieldVisibility_CostcenterAdministration_ResponsibleContact" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FieldVisibility_CostcenterAdministration_AvailableBookingDate" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FieldVisibility_CostcenterAdministration_AvailableBudgets" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FieldVisibility_CostcenterAdministration_AuthorizedRightGroup" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 26.05.2015 10:18:09 -->
+      <item VarName="FieldVisibility_ArticleBaseData_GoodsAccount_UseSecuritasBookingAccountsInsteadOfRevenueAccounts" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FieldVisibility_Entitlement_Group_HideNameInContingentView" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FieldVisibility_Entitlement_Group_IsSpecialGroup" IsActive="true" Type="boolean" value="false" />
+      <item VarName="FieldVisibility_ReturnTransactionReason_Is_InventoryBooking_Reason" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 02.07.2015 12:02:10 -->
+      <item VarName="FieldVisibility_Entitlement_Group_ContainsSubsidisedArticles" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 02.07.2015 12:02:10 -->
+      <item VarName="FieldVisibility_Entitlement_Reorder_BundlingTimeRangeInMonths" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 03.07.2015 00:48:56 -->
+      <item VarName="FieldVisibility_Entitlement_Reorder_LeadTimeInWeeks" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 03.07.2015 00:48:56 -->
+      <item VarName="FieldVisibility_Entitlement_ResetHistoryInventoryByPointRun" IsActive="true" Type="boolean" value="true" /> <!-- New Setting added by ModuleCockpit on 15.10.2015 14:20:46 -->
+      <item VarName="FieldVisibility_ConcernOfficeAdministration_IsCompanyCode" IsActive="true" Type="boolean" value="false" /> <!-- New Setting added by ModuleCockpit on 25.11.2015 09:34:35 -->
+   </FieldVisibility>
+   <AvailableReports>
+      <item VarName="Enable_Report_MandatorEmployeesLicense" IsActive="true" Type="boolean" value="False" />
+      <item VarName="Enable_Report_SizeAnalysis" IsActive="true" Type="boolean" value="false" />
+      <item VarName="Enable_Report_BPBudgetBalanceChange" IsActive="true" Type="boolean" value="false" />
+      <item VarName="UVPID_ChangeGender" IsActive="true" Type="string" value="30000000-0000-0000-0000-000000000000" />
+      <item VarName="UVPID_ChangeBKC" IsActive="true" Type="string" value="20000000-0000-0000-0000-000000000000" />
+      <item VarName="Enable_Report_BPLaundryShelf" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 15.10.2015 14:20:46 -->
+   </AvailableReports>
+   <DynamicReports>
+      <item VarName="SendMail_URL" IsActive="true" Type="string" value="https://uniforms.one-intra.net/reporting/MailSender.aspx" />
+      <item VarName="ReportDisplay_URL" IsActive="true" Type="string" value="https://uniforms.one-intra.net/reporting/ReportDisplay.aspx" />
+      <item VarName="Customer_WS_URL" IsActive="true" Type="string" value="https://uniforms.one-intra.net/reporting/webservices/ws_SBB.asmx" />
+      <Print_CatalogArticleBarcode>
+         <item VarName="Use_Print_CatalogArticleBarcode" IsActive="true" Type="boolean" value="true" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+         <item VarName="Print_CatalogArticleBarcode_ReportID" IsActive="true" Type="string" value="2EE0FD83-4753-4228-B5B6-68B675E8E1B5" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+      </Print_CatalogArticleBarcode>
+      <SBB-Customer>
+         <ProductOverView>
+            <item VarName="Use_SBB_Print_ProductOverView" IsActive="true" Type="boolean" value="false" />
+            <item VarName="Print_ProductOverView_ReportID" IsActive="true" Type="string" value="7D8DD558-B471-4794-A223-5BC9F80ADCC3" />
+            <Placeholder_Dresses>
+               <item VarName="Dress_PlaceholderHeader" IsActive="true" Type="string" value="Berufskleider Header" />
+               <item VarName="Dress_PlaceholderContact" IsActive="true" Type="string" value="Berufskleider Kontakt" />
+               <item VarName="Dress_PlaceholderInfotext" IsActive="true" Type="string" value="Berufskleider Infotext" />
+               <item VarName="Dress_PlaceholderFooter" IsActive="true" Type="string" value="Berufskleider Footer" />
+            </Placeholder_Dresses>
+            <Placeholder_Shoes>
+               <item VarName="Shoe_PlaceholderHeader" IsActive="true" Type="string" value="Sicherheitsschuhe Header" />
+               <item VarName="Shoe_PlaceholderContact" IsActive="true" Type="string" value="Sicherheitsschuhe Kontakt" />
+               <item VarName="Shoe_PlaceholderInfotext" IsActive="true" Type="string" value="Sicherheitsschuhe Infotext" />
+               <item VarName="Shoe_PlaceholderFooter" IsActive="true" Type="string" value="Sicherheitsschuhe Footer" />
+               <item VarName="Shoe_PlaceholderBezugberechtigung" IsActive="true" Type="string" value="Sicherheitsschuhe Bezugberechtigung" />
+            </Placeholder_Shoes>
+         </ProductOverView>
+      </SBB-Customer>
+   </DynamicReports>
+   <AvailableMiniModules>
+      <item VarName="Enable_MM_BTO_Configuration" IsActive="true" Type="boolean" value="false" />
+      <item VarName="Enable_MM_Std_SupplierAdmin" IsActive="true" Type="boolean" value="False" /> <!-- New Setting added by ModuleCockpit on 04.03.2015 15:07:17 -->
+   </AvailableMiniModules>
+   <Flash_General_Settings>
+      <item VarName="DelimeterSign" IsActive="true" Type="string" value="," />
+      <item VarName="ShowAnimations" IsActive="true" Type="boolean" value="True" />
+      <item VarName="CitrixIntegration" IsActive="true" Type="boolean" value="False" />
+      <item VarName="FileName_For_Below_Zero_Quantity_Errors" IsActive="true" Type="string" value="" />
+      <item VarName="Enable_Manual_Download" IsActive="true" Type="boolean" value="false" />
+   </Flash_General_Settings>
+</ConfigFile>
