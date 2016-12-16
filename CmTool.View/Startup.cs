@@ -65,9 +65,10 @@ namespace CmTool.View
             }
 
             app.UseApplicationInsightsExceptionTelemetry();
-            
-            
-                  
+
+            app.UseStaticFiles();
+
+
             // Initialise ReactJS.NET. Must be before static files.
             app.UseReact(config =>
             {
@@ -78,9 +79,13 @@ namespace CmTool.View
                 config                                    
                   .AddScript("~/js/remarkable.min.js")
                   .AddScript("~/js/site.jsx")
-                  .AddScript("~/js/PacketAdmin.jsx") 
-                  .AddScript("~/js/Account.jsx")                 
-                  .AddScript("~/js/JenkinsBuild.jsx")
+                  .AddScript("~/js/PacketAdmin.jsx")
+                
+                  .AddScript("~/js/showdown.js")
+                  .AddScript("~/js/react.js")
+                  .AddScript("~/js/react-dom.js")
+                  //.AddScript("~/js/Account.jsx")                 
+                  //.AddScript("~/js/JenkinsBuild.jsx")                               
                   .SetJsonSerializerSettings(new JsonSerializerSettings
                   {
                       StringEscapeHandling = StringEscapeHandling.EscapeHtml,
@@ -95,8 +100,7 @@ namespace CmTool.View
                 //  .SetLoadBabel(false)
                 //  .AddScriptWithoutTransform("~/Scripts/bundle.server.js");
 
-                app.UseStaticFiles();                
-
+                    
 
                 app.UseMvc(routes =>
                 {

@@ -1,11 +1,17 @@
-﻿var btn = React.createClass({
+﻿/** @jsx React.DOM */
+var CommentBox = React.createClass({
     render: function() {
-        return <button type="button" onClick={this.onClick}>Click me</button>
-    },
-
-    onClick: function(ev) {
-        alert('the button was clicked');    
+        return (
+          <div className="commentBox">
+            Hello, world! I am a CommentBox.
+          </div>
+      );
     }
 });
+ReactDOM.render(
+  <CommentBox/>,
+  document.getElementById('content')
+);
+
 
 
