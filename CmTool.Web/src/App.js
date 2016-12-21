@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
-import logo from '../public/favicon.ico';
+//import logo from '../public/favicon.ico';
 import './App.css';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
 
@@ -9,8 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-        <Navbar inverse collapseOnSelect fluid  expanded >        
-          <img src={logo} className="App-logo" alt="logo" />                    
+        <Navbar inverse collapseOnSelect fluid  expanded >          
           <h2>Rigilog Configuration Tool</h2>
             <Navbar.Header>              
               <Navbar.Toggle />

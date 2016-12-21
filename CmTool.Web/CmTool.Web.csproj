@@ -74,6 +74,7 @@
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="src\Account.js" />
+    <Content Include="src\actions\CmActions.js" />
     <Content Include="src\App.css" />
     <Content Include="src\App.js" />
     <Content Include="src\App.test.js" />
@@ -88,7 +89,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\actions\" />
     <Folder Include="src\assets\images\" />
     <Folder Include="src\assets\stylesheets\" />
     <Folder Include="src\components\" />
