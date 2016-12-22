@@ -16,7 +16,10 @@ module.exports = {
     port: 3000
   },
   entry: {
-    main: [      
+    main: [
+      'webpack-dev-server/client?http://localhost:3000',
+      'webpack/hot/only-dev-server',
+      'react-hot-loader/patch',
       './src/index'
     ],
     vendor: vendorPackages
@@ -35,8 +38,13 @@ module.exports = {
       minChunks: Infinity
     }),
     new HtmlWebpackPlugin({
-      template: './public/index.html'
-    })
+      template: 'public/index.html'
+    }),
+	new webpack.ProvidePlugin({
+   $: "jquery",
+   jQuery: "jquery"
+  })
+	
   ],
   resolveLoader: {
     'fallback': path.join(__dirname, 'node_modules')
@@ -45,7 +53,7 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
-      exclude: [/node_modules/,
+      exclude: /node_modules/,
       include: __dirname
     }, {
       test: /\.css?$/,
