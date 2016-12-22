@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery'
-import App from './App';
-import './index.css';
-import './App.css';
-
-import {JenkinsBuild} from './JenkinsBuild'
-import ModuleAdministration from './ModuleAdministration'
+import App from './containers/App';
+import {JenkinsBuild} from './components/JenkinsBuild'
+import ModuleAdministration from './components/ModuleAdministration'
 
 
 class DropDownVm {

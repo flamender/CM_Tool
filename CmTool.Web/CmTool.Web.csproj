@@ -71,29 +71,23 @@
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="public\favicon.ico" />
+    <Content Include="src\assets\images\favicon.ico" />
     <Content Include="public\index.html" />
-    <Content Include="src\Account.js" />
+    <Content Include="src\components\Account.js" />
     <Content Include="src\actions\CmActions.js" />
-    <Content Include="src\App.css" />
-    <Content Include="src\App.js" />
-    <Content Include="src\App.test.js" />
-    <Content Include="src\FeatureAdministration.js" />
-    <Content Include="src\index.css" />
+    <Content Include="src\assets\stylesheets\App.css" />
+    <Content Include="src\containers\App.js" />
+    <Content Include="src\components\FeatureAdministration.js" />
     <Content Include="src\index.js" />
-    <Content Include="src\JenkinsBuild.js" />
-    <Content Include="src\ModuleAdministration.js" />
-    <Content Include="src\PacketAdministration.js" />
+    <Content Include="src\components\JenkinsBuild.js" />
+    <Content Include="src\components\ModuleAdministration.js" />
+    <Content Include="src\components\PacketAdministration.js" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\assets\images\" />
-    <Folder Include="src\assets\stylesheets\" />
-    <Folder Include="src\components\" />
     <Folder Include="src\constants\" />
-    <Folder Include="src\containers\" />
     <Folder Include="src\reducers\" />
     <Folder Include="src\store\" />
   </ItemGroup>

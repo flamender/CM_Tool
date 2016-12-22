@@ -3,7 +3,7 @@ import { ControlLabel, FormControl, Button, ButtonGroup, MenuItem, DropdownButto
 import { ExDropdown } from './JenkinsBuild'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-import './App.css';
+import '../assets/stylesheets/App.css';
 
 
 
