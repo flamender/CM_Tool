@@ -1,11 +1,12 @@
-﻿using Configurator;
+﻿using CmToolConfigurator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
-using SettingsTool.Domain;
+using CmTool.Domain;
+using CmTool.Configurator;
 
 namespace TestConfiguration
 {

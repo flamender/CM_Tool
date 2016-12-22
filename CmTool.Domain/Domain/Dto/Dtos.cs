@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SettingsTool.Domain
+namespace CmTool.Domain
 {
 
     public class ItemDto

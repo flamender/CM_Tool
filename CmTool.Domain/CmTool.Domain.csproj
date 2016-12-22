@@ -60,16 +60,27 @@
     <Compile Include="Domain\Generated\BaseConfig.cs" />
     <Compile Include="Domain\Generated\Module_Server_Access.cs" />
     <Compile Include="Domain\Generated\Module_Settings.cs" />
+    <Compile Include="Domain\Models\JenkinsBuildModel.cs" />
+    <Compile Include="Infrastructure\JenkinsBuildRepository.cs" />
     <Compile Include="Infrastructure\SettingsToolConfiguration.cs" />
     <Compile Include="Infrastructure\DirectoryInfoRepository.cs" />
     <Compile Include="Infrastructure\FeatureSettingsFileRepository.cs" />
     <Compile Include="Infrastructure\XExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Infrastructure\FeatureSettingsFileReader.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Application\" />

@@ -1,10 +1,10 @@
-﻿using Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using CmTool.Domain.Models;
 
 namespace CmTool.WebApi.Controllers
 {
@@ -13,7 +13,8 @@ namespace CmTool.WebApi.Controllers
         // GET:  JenkinsBuildModel
         public IEnumerable<JenkinsBuildModel> Get()
         {
-            return new JenkinsBuildModel[] { new JenkinsBuildModel { Name = "MIGROS" } , new JenkinsBuildModel { Name = "WF-Energie" }};
+            //var rep = new 
+            return new JenkinsBuildModel[] { new JenkinsBuildModel { CustomerName = "MIGROS" } , new JenkinsBuildModel { CustomerName = "WF-Energie" }};
         }
 
         // GET JenkinsBuildModel/5
