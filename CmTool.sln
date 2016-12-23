@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmTool.WebApi", "CmTool.WebApi\CmTool.WebApi.csproj", "{066697F3-E226-4412-82E1-FED4C112697E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmTool.Domain", "CmTool.Domain\CmTool.Domain.csproj", "{C62E8138-7E18-47FB-91EC-05805FA32637}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmTool.Domain.Test", "CmTool.Domain.Test\CmTool.Domain.Test.csproj", "{23EDFF99-2153-42C4-803A-5B8A33432575}"
@@ -10,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmTool.Db", "CmTool.Db\CmTool.Db.csproj", "{949CC8F2-153A-4889-8497-5B9AEB154555}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmTool.Web", "CmTool.Web\CmTool.Web.csproj", "{898E5C63-2B7E-42F8-A505-CACE65ED1EEB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmTool.WebApi", "CmTool.WebApi\CmTool.WebApi.csproj", "{066697F3-E226-4412-82E1-FED4C112697E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

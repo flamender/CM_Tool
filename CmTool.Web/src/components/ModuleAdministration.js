@@ -20,8 +20,7 @@ class ModuleAdministration extends Component {
                 <fieldset>
                     <legend>Module Administration</legend>
                     <div className="ModuleAdministration">
-                        <table>
-                            <body>
+                        <table>                            
                                 <tr>
                                     <form>
                                         <FormGroup controlId="formBasicText">
@@ -54,8 +53,7 @@ class ModuleAdministration extends Component {
                                             {' '}
                                             <Checkbox inline>Beibehalten</Checkbox>
                                                                          
-                                </tr>
-                            </body>
+                                </tr>                       
                         </table>
                     </div>
                 </fieldset>
