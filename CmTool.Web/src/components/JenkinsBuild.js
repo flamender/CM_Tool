@@ -46,7 +46,7 @@ export class JenkinsBuild extends Component {
               <ExDropdown vm={this.state.plattformDropDownVm} />
               <ExDropdown vm={this.state.CurrentIstallationDropDownVm} />              
               <Button type="submit"    >Jekins Revisions-File erzeugen</Button>
-              <Button  onClick={this.getComponent}>XmlHttp</Button>
+              <Button  onClick={this.getApiData}>XmlHttp</Button>
             </table>
           </div>
         </fieldset>
@@ -54,17 +54,21 @@ export class JenkinsBuild extends Component {
     );  
   }
 
-  getComponent(){
-      alert("dafdsf") ;
-       var xhr = new XMLHttpRequest();
+  getApiData(){      
+      var xhr = new XMLHttpRequest();
        xhr.onreadystatechange=function(x,m)
        {
-           if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200)
+           alert('getApiData');
+           if(xhr.readyState === 4)
            {
                alert(xhr.responseText);
            }
-       }
-       xhr.open('GET', 'http://localhost:51408/JenkinsController', true);  
+           else
+           {
+               alert('Error');
+           }
+       }       
+       xhr.open('GET', 'http://localhost:51407/public/jenkins', true);  
    }
 
   componentDidMount() {
