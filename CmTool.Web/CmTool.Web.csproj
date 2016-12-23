@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
+    <Content Include="webpack.config.js" />
+    <Content Include="webpack.prod.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\assets\images\favicon.ico" />
