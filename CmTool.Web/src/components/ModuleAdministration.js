@@ -1,15 +1,33 @@
 import React, { Component } from 'react';
 import { ControlLabel, FormControl, Button, ButtonGroup, MenuItem, DropdownButton, Form, FormGroup, HelpBlock, Checkbox,FieldGroup } from  'react-bootstrap';
-import { ExDropdown } from './JenkinsBuild'
+import { ExDropdown ,DropDownVm, JenkinsVm} from './JenkinsBuild'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import '../assets/stylesheets/App.css';
 
 
 
+export class ModuleAdminVm {
+    constructor() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                alert(xhr.responseText);
+            }
+            xhr.open('GET', 'http://localhost:51408/JenkinsController', true);    
+        }
+          
+        this.jenkinsVm = new JenkinsVm();
+        this.ModuleVm =  new DropDownVm("Modul", [{ key: 1, value: "Bill" }, { key: 2, value: "OAC" }])
+    }
+};
+
+
+
+
 const wellStyles = { maxWidth: 600, margin: '0 auto 10px' };
 
-class ModuleAdministration extends Component {
+export class ModuleAdministration extends Component {
     constructor(props) {
         super(props);
         this.state = props.vm;
@@ -66,4 +84,3 @@ class ModuleAdministration extends Component {
      />
 */
 
-export default ModuleAdministration;

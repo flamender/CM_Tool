@@ -1,13 +1,17 @@
 import 'babel-polyfill';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Navbar, NavItem, Nav } from 'react-bootstrap';
 //import logo from '../public/favicon.ico';
-import {JenkinsBuild} from '../components/JenkinsBuild';
+import '../assets/stylesheets/App.css';
+
+import {JenkinsBuild ,JenkinsVm } from '../components/JenkinsBuild';
+import {ModuleAdministration, ModuleAdminVm} from '../components/ModuleAdministration'
 import {PacketAdministration} from '../components/PacketAdministration';
 import {FeatureAdministration} from '../components/FeatureAdministration';
 import {CustomerAdministration} from '../components/CustomerAdministration';
-import '../assets/stylesheets/App.css';
-import { Navbar, NavItem, Nav } from 'react-bootstrap';
+
+
 
 
 
@@ -42,7 +46,8 @@ class App extends Component {
   {
       switch(selectedKey)
       {
-          case 1:              
+          case 1:  
+              ReactDOM.render(<JenkinsBuild vm={new JenkinsVm()} />, document.getElementById('root1'));
               break;
           case 2: 
               ReactDOM.render(<FeatureAdministration/>,document.getElementById('root1'));
@@ -50,7 +55,8 @@ class App extends Component {
           case 3:
               ReactDOM.render(<CustomerAdministration/>,document.getElementById('root1'));
               break;
-         case 4:              
+         case 4:
+              ReactDOM.render(<ModuleAdministration vm={new ModuleAdminVm()} />, document.getElementById('root1'));
               break;
           case  5:              
               ReactDOM.render(<PacketAdministration/>,document.getElementById('root1'));

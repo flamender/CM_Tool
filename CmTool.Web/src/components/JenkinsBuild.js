@@ -6,7 +6,25 @@ import '../assets/stylesheets/App.css';
 
 
 
+export class DropDownVm {
+    constructor(caption, items) {
+        this.caption = caption;
+        this.items = items;
+    }
+};
 
+export class JenkinsVm {
+
+    constructor() {
+        this.customerDropDownVm = new DropDownVm('Kunde',
+            [{ key: 1, value: 'DEZA' }, { key: 2, value: 'WF-MIGROS' }, { key: 3, value: 'Wahler' }]
+        );
+
+        this.revsionDropDownVm = new DropDownVm("Revision", [{ key: 1, value: "4.0.0.8" }, { key: 2, value: "4.0.0.10" }])
+        this.plattformDropDownVm = new DropDownVm("Plattform", [{ key: 1, value: "Test" }, { key: 2, value: "Integration" }, { key: 3, value: "Produktion" }])
+        this.CurrentIstallationDropDownVm = new DropDownVm("Aktuell installierte Revision", [{ key: 1, value: "4.0.0.8" }, { key: 2, value: "4.0.0.10" }])
+    }
+};
 
 
 export class ExDropdown extends Component {
