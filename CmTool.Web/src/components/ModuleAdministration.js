@@ -39,7 +39,7 @@ class ModuleAdministration extends Component {
                                         </FormGroup>
                                     </form>
                                 </tr>
-                                <ExDropdown vm={this.state.jenkinsVm.customerDropDownVm} />
+                                <ExDropdown vm={this.state.jenkinsVm.customerDropDownVm}/>
                                 <ExDropdown vm={this.state.jenkinsVm.revsionDropDownVm} />
                                 <ExDropdown vm={this.state.ModuleVm} />
                                 <ExDropdown vm={this.state.jenkinsVm.plattformDropDownVm} />

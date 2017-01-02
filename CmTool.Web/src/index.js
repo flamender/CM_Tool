@@ -53,8 +53,7 @@ ReactDOM.render(
 
 
 ReactDOM.render(
-    <table className="AppTable" >
-        <body>
+    <table className="AppTable" >     
             <tr>
                 <td>
                     <JenkinsBuild vm={new JenkinsVm()} />
@@ -63,7 +62,6 @@ ReactDOM.render(
                     <ModuleAdministration vm={new ModuleAdminVm()} />
                 </td>
             </tr>
-        </body>
     </table>
     , document.getElementById('root1')
 );
