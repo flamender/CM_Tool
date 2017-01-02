@@ -16,8 +16,8 @@ class DropDownVm {
 class JenkinsVm {
 
     constructor() {
-        this.customerDropDownVm = new DropDownVm("Kunde",
-            [{ key: 1, value: "DEZA" }, { key: 2, value: "WF-MIGROS" }, { key: 3, value: "Wahler" }]
+        this.customerDropDownVm = new DropDownVm('Kunde',
+            [{ key: 1, value: 'DEZA' }, { key: 2, value: 'WF-MIGROS' }, { key: 3, value: 'Wahler' }]
         );
 
         this.revsionDropDownVm = new DropDownVm("Revision", [{ key: 1, value: "4.0.0.8" }, { key: 2, value: "4.0.0.10" }])
@@ -46,7 +46,7 @@ class ModuleAdminVm {
 
 
 ReactDOM.render(
-    <App />,
+    <App/>,
     document.getElementById('root')
 );
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 //import logo from '../public/favicon.ico';
+import {JenkinsBuild} from '../components/JenkinsBuild'
 import '../assets/stylesheets/App.css';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
 
@@ -14,18 +15,30 @@ class App extends Component {
               <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
-              <Nav>
-                <NavItem  eventKey={1} href="#">Jenkins-Build</NavItem>
-                <NavItem eventKey={2} href="#">Feature Verwaltung</NavItem>                
-                <NavItem eventKey={3} href="#">Kunden Verwaltung</NavItem>
-                <NavItem eventKey={3} href="#">Modul Konfiguration</NavItem>
-                <NavItem eventKey={3} href="#">Paket Verwaltung</NavItem>
+              <Nav  onSelect={this.handleSelect}>
+                <NavItem  eventKey={1}>Jenkins-Build</NavItem>
+                <NavItem eventKey={2}>Feature Verwaltung</NavItem>                
+                <NavItem eventKey={3}>Kunden Verwaltung</NavItem>
+                <NavItem eventKey={4}>Modul Konfiguration</NavItem>
+                <NavItem eventKey={5}>Paket Verwaltung</NavItem>
               </Nav>              
             </Navbar.Collapse>
           </Navbar>
           </div>
         </div>      
     );
+  }
+  
+  handleSelect(selectedKey)
+  {
+      switch(selectedKey)
+      {
+          case 1:
+              alert ('Jenlins');
+              break;
+          default:
+      }
+              
   }
 }
 

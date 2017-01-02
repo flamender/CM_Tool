@@ -45,7 +45,7 @@ export class JenkinsBuild extends Component {
               <ExDropdown vm={this.state.revsionDropDownVm} />
               <ExDropdown vm={this.state.plattformDropDownVm} />
               <ExDropdown vm={this.state.CurrentIstallationDropDownVm} />              
-              <Button type="submit"    >Jekins Revisions-File erzeugen</Button>
+              <Button type="submit">Jekins Revisions-File erzeugen</Button>
               <Button  onClick={this.getApiData}>XmlHttp</Button>
             </table>
           </div>
@@ -56,19 +56,21 @@ export class JenkinsBuild extends Component {
 
   getApiData(){      
       var xhr = new XMLHttpRequest();
-       xhr.onreadystatechange=function(x,m)
-       {
-           alert('getApiData');
-           if(xhr.readyState === 4)
-           {
-               alert(xhr.responseText);
-           }
-           else
-           {
-               alert('Error');
-           }
-       }       
-       xhr.open('GET', 'http://localhost:51407/public/jenkins', true);  
+      xhr.onload = function(x,m)
+            {               
+              if(xhr.readyState === 4)
+              {
+                  alert(xhr.responseText);
+
+              }
+              else
+              {
+                console.log('Error Call Webservice')
+              }
+      }
+      
+      xhr.open('GET', 'http://localhost:51407/public/jenkins');  
+      xhr.send();
    }
 
   componentDidMount() {
