@@ -5,21 +5,23 @@
   "license": "",
   "repository": "",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --hot --progress --colors --devtool source-map", 
+    "start": "webpack-dev-server --config webpack.config.js --hot --progress --colors --devtool source-map",
     "build": "webpack --config webpack.config.js --progress --profile --colors",
     "prod": "webpack -p --config webpack.prod.config.js --progress --colors"
   },
   "dependencies": {
-    "react-bootstrap": "^0.30.7",
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.0",
     "classnames": "^2.2.5",
+    "foundation-sites": "^6.1.2",
     "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.1.0",
     "react": "^15.1.0",
+    "react-bootstrap": "^0.30.7",
     "react-dom": "^15.1.0",
     "react-hot-loader": "^3.0.0-beta.1",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
+    "redux-localstorage": "^0.4.1",
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {

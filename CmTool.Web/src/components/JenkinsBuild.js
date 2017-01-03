@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import _ from 'lodash';
+import {getCustomer} from '../actions/customer';
 import { ControlLabel, FormControl, Button, ButtonGroup, MenuItem, DropdownButton, Form, FormGroup } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import '../assets/stylesheets/App.css';
-import '../config/ApiEndpoints';
 
 
 
@@ -53,10 +55,13 @@ const wellStyles = { maxWidth: 500, margin: '0 auto 10px' };
 
 export class JenkinsBuild extends Component {
 
+    
+
+
   constructor(props) {
     super(props);
-    this.state = props.vm;
-
+    this.state = props.vm;      
+    this.test = getCustomer;        
   }
 
   
@@ -101,6 +106,8 @@ export class JenkinsBuild extends Component {
    }
 
   componentDidMount() {
+
+      
   }
 
   componentWillUnmount() {

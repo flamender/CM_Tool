@@ -7,9 +7,9 @@ import { Provider } from 'react-redux';
 
 
 
-ReactDOM.render(
+ReactDOM.render(    
     <App/>,
-    document.getElementById('root')
+    document.getElementById('react-container')
 );
 
 

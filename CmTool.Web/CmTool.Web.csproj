@@ -69,9 +69,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="package.json" />
-    <Content Include="src\actions\Customer.js" />
+    <Content Include="src\actions\customer.js" />
     <Content Include="src\components\CustomerAdministration.js" />
-    <Content Include="src\config\ApiEndpoints.js" />
+    <Content Include="src\config\apiEndpoints.js" />
+    <Content Include="src\constants\actionTypes.js" />
+    <Content Include="src\foundation._init.js" />
+    <Content Include="src\reducers\customer.js" />
+    <Content Include="src\reducers\index.js" />
     <Content Include="src\store\configureStore.js" />
     <Content Include="webpack.config.js" />
     <Content Include="webpack.prod.config.js" />
@@ -92,10 +96,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\constants\" />
-    <Folder Include="src\reducers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
