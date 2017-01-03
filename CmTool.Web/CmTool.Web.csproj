@@ -72,6 +72,7 @@
     <Content Include="src\actions\Customer.js" />
     <Content Include="src\components\CustomerAdministration.js" />
     <Content Include="src\config\ApiEndpoints.js" />
+    <Content Include="src\store\configureStore.js" />
     <Content Include="webpack.config.js" />
     <Content Include="webpack.prod.config.js" />
   </ItemGroup>
@@ -94,7 +95,6 @@
   <ItemGroup>
     <Folder Include="src\constants\" />
     <Folder Include="src\reducers\" />
-    <Folder Include="src\store\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

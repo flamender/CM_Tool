@@ -3,6 +3,8 @@ import { ControlLabel, FormControl, Button, ButtonGroup, MenuItem, DropdownButto
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import '../assets/stylesheets/App.css';
+import '../config/ApiEndpoints';
+
 
 
 
@@ -56,6 +58,9 @@ export class JenkinsBuild extends Component {
     this.state = props.vm;
 
   }
+
+  
+
   render() {
     return (
       <div className="Well" style={wellStyles}>
