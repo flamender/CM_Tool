@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
 //import logo from '../public/favicon.ico';
 import '../assets/stylesheets/App.css';
+import {getCustomer} from '../actions/customer';
 
 import {JenkinsBuild ,JenkinsVm } from '../components/JenkinsBuild';
 import {ModuleAdministration, ModuleAdminVm} from '../components/ModuleAdministration'
@@ -47,7 +48,7 @@ class App extends Component {
       switch(selectedKey)
       {
           case 1:  
-              ReactDOM.render(<JenkinsBuild vm={new JenkinsVm()} />, document.getElementById('root1'));
+              ReactDOM.render(<JenkinsBuild getCustomer={getCustomer} />, document.getElementById('root1'));
               break;
           case 2: 
               ReactDOM.render(<FeatureAdministration/>,document.getElementById('root1'));

@@ -8,15 +8,7 @@ import '../assets/stylesheets/App.css';
 
 
 export class ModuleAdminVm {
-    constructor() {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                alert(xhr.responseText);
-            }
-            xhr.open('GET', 'http://localhost:51408/JenkinsController', true);    
-        }
-          
+    constructor() {          
         this.jenkinsVm = new JenkinsVm();
         this.ModuleVm =  new DropDownVm("Modul", [{ key: 1, value: "Bill" }, { key: 2, value: "OAC" }])
     }

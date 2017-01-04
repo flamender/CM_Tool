@@ -84,7 +84,6 @@
     <Content Include="src\assets\images\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="src\components\Account.js" />
-    <Content Include="src\actions\CmActions.js" />
     <Content Include="src\assets\stylesheets\App.css" />
     <Content Include="src\containers\App.js" />
     <Content Include="src\components\FeatureAdministration.js" />

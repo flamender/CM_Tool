@@ -10,7 +10,7 @@ const apiUrl = __API_URL__;
 const jenkinsApiUrl = apiUrl + '/jenkins';
 
 
-const getCustomerRequest = ()=> {{type: types.GET_TODOS_REQUEST }};
+const getCustomerRequest = ()=> {{type: types.GET_All_REQUEST }};
 
 const parseJSON  = (response) => {
     return response.json();
@@ -42,10 +42,9 @@ function handleApiError(error) {
 }
 
 
-export function getCustomer() {
-    return (dispatch, getState) => {
-        dispatch(getCustomerRequest());
-        fetch(todoApiUrl, {
+export default function getCustomer() {
+    return (dispatch) => {               
+        fetch(jenkinsApiUrl, {
             headers: {
                 'Accept': 'application/json'
             }
@@ -55,7 +54,7 @@ export function getCustomer() {
         .then(data => {
             dispatch(getCustomerSuccess(data));
         })
-        .catch(handleApiError);
+        .catch(handleApiError);        
     };
 }
 
