@@ -42,7 +42,7 @@ function handleApiError(error) {
 }
 
 
-export default function getCustomer() {
+export function fetchCustomer() {
     return (dispatch) => {               
         fetch(jenkinsApiUrl, {
             headers: {

@@ -19,6 +19,5 @@ document.getElementById('react-container')
 store.dispatch({
     type: 'GET_All_REQUEST',    
 })
-console.log(store.getState())
 
 

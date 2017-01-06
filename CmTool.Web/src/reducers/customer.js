@@ -1,4 +1,4 @@
-﻿import getCustomer from '../actions/customer';
+﻿import fetchCustomer from '../actions/customer';
 
 const GET_All_REQUEST = 'GET_All_REQUEST'; 
 const SELECT_REQUEST  =  'SELECT_REQUEST';

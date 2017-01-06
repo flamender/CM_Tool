@@ -73,6 +73,7 @@
     <Content Include="src\components\CustomerAdministration.js" />
     <Content Include="src\config\apiEndpoints.js" />
     <Content Include="src\constants\actionTypes.js" />
+    <Content Include="src\containers\Header.js" />
     <Content Include="src\foundation._init.js" />
     <Content Include="src\reducers\customer.js" />
     <Content Include="src\reducers\index.js" />
