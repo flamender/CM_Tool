@@ -1,24 +1,18 @@
 ﻿import fetchCustomer from '../actions/customer';
-
-const GET_All_REQUEST = 'GET_All_REQUEST'; 
-const SELECT_REQUEST  =  'SELECT_REQUEST';
-
-
-
-
+import * as actionTypeConst from '../constants/actionTypeConst';
 
 
 
 const customers = (state = [], action) => {
     switch (action.type) {
-        case  GET_All_REQUEST:            
+        case  actionTypeConst.GET_All_REQUEST:            
             return  [
                      ...state,
                      {name : 'Migros' , id : 1},
                      {name : 'DEZA', id:2}
                    ]
-        case SELECT_REQUEST:
-
+        case actionTypeConst.SELECT_REQUEST:
+           return state
         default:
             return state
     }

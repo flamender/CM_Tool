@@ -1,5 +1,5 @@
 ﻿import fetch from 'isomorphic-fetch'
-import * as types from '../constants/ActionTypes';
+import * as actionTypeConst from '../constants/actionTypeConst';
 
 
 export const FETCHING_CUSTOMER = 'FETCHING_CUSTOMERS';
@@ -10,7 +10,7 @@ const apiUrl = __API_URL__;
 const jenkinsApiUrl = apiUrl + '/jenkins';
 
 
-const getCustomerRequest = ()=> {{type: types.GET_All_REQUEST }};
+const getCustomerRequest = ()=> {{actionTypeConst: types.GET_All_REQUEST }};
 
 const parseJSON  = (response) => {
     return response.json();

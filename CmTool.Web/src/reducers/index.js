@@ -1,9 +1,10 @@
 ﻿import {combineReducers} from 'redux';
 import customers from './customer';
-
+import app from './app';
 
 const reducerCollection = {
-    customers
+    customers,
+    app
 };
 
 

@@ -5,7 +5,7 @@ import { Navbar, NavItem, Nav } from 'react-bootstrap';
 //import logo from '../public/favicon.ico';
 import '../assets/stylesheets/App.css';
 import fetchCustomer from '../actions/customer';
-
+import {selectedKey} from '../actions/app'; 
 import JenkinsBuild  from '../components/JenkinsBuild';
 import {ModuleAdministration, ModuleAdminVm} from '../components/ModuleAdministration'
 import {PacketAdministration} from '../components/PacketAdministration';
@@ -18,8 +18,10 @@ class App extends Component {
     constructor(props) {         
         super(props);
         
-        this.state = {selectedKey : 1};       
+               
     }
+
+
     render() {
         return (
           <div className="App">
@@ -30,7 +32,7 @@ class App extends Component {
                   <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
-                  <Nav  onSelect={this.handleSelect}>
+                  <Nav  onSelect= {this.handleSelect}>
                     <NavItem  eventKey={1}>Jenkins-Build</NavItem>
                     <NavItem eventKey={2}>Feature Verwaltung</NavItem>                
                     <NavItem eventKey={3}>Kunden Verwaltung</NavItem>
@@ -46,11 +48,11 @@ class App extends Component {
             </div>      
       );
     }
-  
-       
+     
     getPageById()
     {
-        switch(this.state.selectedKey)
+        let id = key;
+        switch(id)
         {
             case 1:                
                 return <JenkinsBuild/>;
@@ -68,17 +70,17 @@ class App extends Component {
               ReactDOM.render(<PacketAdministration/>,document.getElementById('rootPages'));
               break;
           default:
-}
-}
+         }
+      }
 
 
-  handleSelect(selectedKey)
- {
-   this.state.selectedKey =  selectedKey; 
-   ReactDOM.unmountComponentAtNode(document.getElementById('curPage'));
+  handleSelect(id)
+  {
+    key = id;
+   ReactDOM.unmountComponentAtNode(React.findDOMNode('curPage').parentNode);
    ReactDOM.render();   
   }
 }
 
-
-export default  connect()(App)
+let  key = 1;
+export default  connect(null, {selectedKey})(App)

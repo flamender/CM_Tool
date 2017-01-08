@@ -9,15 +9,30 @@ import reducer from './reducers';
 
 const store = createStore(reducer)
 
+  
 ReactDOM.render(    
     <Provider store={store}>     
-    <App/>
+    <App />
     </Provider>,
 document.getElementById('react-container')
 );
 
+
 store.dispatch({
-    type: 'GET_All_REQUEST',    
+    type: 'INC_PAGE_ID',
+    selectedKey:  2    
+})
+
+store.dispatch({
+    type: 'INC_PAGE_ID',
+    selectedKey:  3    
+})
+
+store.dispatch({
+    type: 'GET_All_REQUEST',   
 })
 
 
+
+
+console.log( store.getState());
